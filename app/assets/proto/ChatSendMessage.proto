@@ -1,0 +1,26 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoChatSendMessage";
+
+message ChatSendMessage {
+    Request request = 1;
+    RoomMessageType message_type = 2;
+    uint64 room_id = 3;
+    string message = 4;
+    string attachment = 5;
+    RoomMessageLocation location = 6;
+    RoomMessageContact contact = 7;
+    uint64 reply_to = 8;
+    RoomMessageForwardFrom forward_from = 9;
+}
+
+message ChatSendMessageResponse {
+    Response response = 1;
+    uint64 room_id = 2;
+    RoomMessage room_message = 3;
+}

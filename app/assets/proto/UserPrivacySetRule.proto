@@ -1,0 +1,20 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserPrivacySetRule";
+
+message UserPrivacySetRule {
+    Request request = 1;
+    PrivacyType type = 2;
+    PrivacyLevel level = 3;
+}
+
+message UserPrivacySetRuleResponse {
+    Response response = 1;
+    PrivacyType type = 2;
+    PrivacyLevel level = 3;
+}

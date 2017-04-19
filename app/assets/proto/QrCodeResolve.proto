@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoQrCodeResolve";
+
+message QrCodeResolve {
+    Request request = 1;
+    string username = 2;
+    uint64 message_id = 3;
+}
+
+message QrCodeResolveResponse {
+    Response response = 1;
+    bytes qr_code_image = 2;
+}

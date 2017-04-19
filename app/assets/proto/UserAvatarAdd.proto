@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserAvatarAdd";
+
+message UserAvatarAdd {
+    Request request = 1;
+    string attachment = 2;
+}
+
+message UserAvatarAddResponse {
+    Response response = 1;
+    Avatar avatar = 2;
+}

@@ -1,0 +1,29 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserVerifyNewDevice";
+
+message UserVerifyNewDevice {
+    Request request = 1;
+    string token = 2;
+}
+
+message UserVerifyNewDeviceResponse {
+    Response response = 1;
+    string app_name = 2;
+    uint32 app_id = 3;
+    uint32 app_build_version = 4;
+    string app_version = 5;
+
+    Platform platform = 6;
+    string platform_version = 7;
+
+    Device device = 8;
+    string device_name = 9;
+
+    bool two_step_verification = 10;
+}

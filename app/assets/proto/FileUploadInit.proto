@@ -1,0 +1,24 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoFileUploadInit";
+
+message FileUploadInit {
+    Request request = 1;
+    bytes first_bytes = 2;
+    bytes last_bytes = 3;
+    int64 size = 4;
+    bytes file_hash = 5;
+    string file_name = 6;
+}
+
+message FileUploadInitResponse {
+    Response response = 1;
+    string token = 2;
+    double progress = 3;
+    int64 offset = 4;
+    int32 limit = 5;
+}

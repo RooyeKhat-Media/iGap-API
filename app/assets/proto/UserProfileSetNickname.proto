@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserProfileNickname";
+
+message UserProfileSetNickname {
+    Request request = 1;
+    string nickname = 2;
+}
+
+message UserProfileSetNicknameResponse {
+    Response response = 1;
+    string nickname = 2;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoHeartbeat";
+
+message Heartbeat {
+    Request request = 1;
+}
+
+message HeartbeatResponse {
+    Response response = 1;
+}

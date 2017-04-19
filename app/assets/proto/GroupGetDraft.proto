@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoGroupGetDraft";
+
+message GroupGetDraft {
+    Request request = 1;
+    uint64 room_id = 2;
+}
+
+message GroupGetDraftResponse {
+    Response response = 1;
+    RoomDraft draft = 2;
+}

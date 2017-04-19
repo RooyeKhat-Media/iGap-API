@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserProfileEmail";
+
+message UserProfileSetEmail {
+    Request request = 1;
+    string email = 2;
+}
+
+message UserProfileSetEmailResponse {
+    Response response = 1;
+    string email = 2;
+}

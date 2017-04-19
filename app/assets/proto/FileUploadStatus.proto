@@ -1,0 +1,24 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoFileUploadStatus";
+
+message FileUploadStatus {
+    Request request = 1;
+    string token = 2;
+}
+
+message FileUploadStatusResponse {
+    Response response = 1;
+    enum Status {
+        UPLOADING = 0;
+        PROCESSING = 1;
+        PROCESSED = 2;
+    }
+    Status status = 2;
+    double progress = 3;
+    uint32 recheck_delay_ms = 4;
+}

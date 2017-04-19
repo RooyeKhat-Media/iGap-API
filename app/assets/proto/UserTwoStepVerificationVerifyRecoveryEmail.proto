@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserTwoStepVerificationVerifyRecoveryEmail";
+
+message UserTwoStepVerificationVerifyRecoveryEmail {
+    Request request = 1;
+    string token = 2;
+}
+
+message UserTwoStepVerificationVerifyRecoveryEmailResponse {
+    Response response = 1;
+}

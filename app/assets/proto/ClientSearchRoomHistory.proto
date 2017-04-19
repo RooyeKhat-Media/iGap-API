@@ -1,0 +1,32 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoClientSearchRoomHistory";
+
+message ClientSearchRoomHistory {
+    Request request = 1;
+    uint64 room_id = 2;
+    uint32 offset = 3;
+
+    enum Filter {
+        IMAGE = 0;
+        VIDEO = 1;
+        AUDIO = 2;
+        VOICE = 3;
+        GIF = 4;
+        FILE = 5;
+        URL = 6;
+    }
+    Filter filter = 4;
+}
+
+message ClientSearchRoomHistoryResponse {
+    Response response = 1;
+    uint32 totalCount = 2;
+    uint32 notDeletedCount = 3;
+    repeated RoomMessage result = 4;
+}

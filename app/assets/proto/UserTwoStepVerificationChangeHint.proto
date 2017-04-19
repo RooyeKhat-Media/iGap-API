@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserTwoStepVerificationChangeHint";
+
+message UserTwoStepVerificationChangeHint {
+    Request request = 1;
+    string password = 2;
+    string hint = 3;
+}
+
+message UserTwoStepVerificationChangeHintResponse {
+    Response response = 1;
+}

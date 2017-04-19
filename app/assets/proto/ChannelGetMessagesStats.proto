@@ -1,0 +1,25 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoChannelGetMessagesStats";
+
+message ChannelGetMessagesStats {
+    Request request = 1;
+    uint64 room_id = 2;
+    repeated uint64 message_id = 3;
+}
+
+message ChannelGetMessagesStatsResponse {
+    Response response = 1;
+
+    message Stats {
+        uint64 message_id = 1;
+        string views_label = 2;
+        string thumbs_up_label = 3;
+        string thumbs_down_label = 4;
+    }
+    repeated Stats stats = 2;
+}

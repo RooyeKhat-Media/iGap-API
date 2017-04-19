@@ -1,0 +1,13 @@
+syntax = "proto3";
+package proto;
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoPushTwoStepVerification";
+
+message PushTwoStepVerificationResponse {
+    Response response = 1;
+    string username = 2;
+    uint64 user_id = 3;
+    string author_hash = 4;
+}

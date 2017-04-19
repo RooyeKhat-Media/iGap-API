@@ -1,0 +1,24 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoChannelAddMember";
+
+message ChannelAddMember {
+    Request request = 1;
+    uint64 room_id = 2;
+    message Member {
+        uint64 user_id = 1;
+    }
+    Member member = 3;
+}
+
+message ChannelAddMemberResponse {
+    Response response = 1;
+    uint64 room_id = 2;
+    uint64 user_id = 3;
+    ChannelRoom.Role role = 4;
+}

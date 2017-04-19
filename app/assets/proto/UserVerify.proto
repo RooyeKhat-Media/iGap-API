@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserVerify";
+
+message UserVerify {
+    Request request = 1;
+    uint32 code = 2;
+    string username = 3;
+}
+
+message UserVerifyResponse {
+    Response response = 1;
+    string token = 2;
+    bool new_user = 3;
+}

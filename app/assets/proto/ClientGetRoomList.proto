@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoClientGetRoomList";
+
+message ClientGetRoomList {
+    Request request = 1;
+}
+
+message ClientGetRoomListResponse {
+    Response response = 1;
+    repeated Room rooms = 2;
+}

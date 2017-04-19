@@ -1,0 +1,20 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoInfoCountry";
+
+message InfoCountry {
+    Request request = 1;
+    string iso_code = 2;
+}
+
+message InfoCountryResponse {
+    Response response = 1;
+    uint32 calling_code = 2;
+    string name = 3;
+    string pattern = 4;
+    string regex = 5;
+}

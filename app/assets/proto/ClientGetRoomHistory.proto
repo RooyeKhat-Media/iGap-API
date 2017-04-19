@@ -1,0 +1,25 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoClientGetRoomHistory";
+
+message ClientGetRoomHistory {
+    Request request = 1;
+    uint64 room_id = 2;
+    uint64 first_message_id = 3;
+
+    enum Direction {
+        UP = 0;
+        DOWN = 1;
+    }
+    Direction direction = 4;
+}
+
+message ClientGetRoomHistoryResponse {
+    Response response = 1;
+    repeated RoomMessage message = 2;
+}

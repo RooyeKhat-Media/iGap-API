@@ -1,0 +1,22 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoGroupSetAction";
+
+message GroupSetAction {
+    Request request = 1;
+    uint64 room_id = 2;
+    ClientAction action = 3;
+    uint32 action_id = 4;
+}
+
+message GroupSetActionResponse {
+    Response response = 1;
+    uint64 room_id = 2;
+    ClientAction action = 3;
+    uint64 user_id = 4;
+}

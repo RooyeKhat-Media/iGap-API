@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserGetDeleteToken";
+
+message UserGetDeleteToken {
+    Request request = 1;
+}
+
+message UserGetDeleteTokenResponse {
+    Response response = 1;
+    uint32 resend_delay = 2;
+    repeated uint64 sms_number = 3;
+    string token_regex = 4;
+    string token_length = 5;
+}

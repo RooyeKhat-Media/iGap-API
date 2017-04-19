@@ -1,0 +1,20 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoChannelAvatarAdd";
+
+message ChannelAvatarAdd {
+    Request request = 1;
+    string attachment = 2;
+    uint64 room_id = 3;
+}
+
+message ChannelAvatarAddResponse {
+    Response response = 1;
+    Avatar avatar = 2;
+    uint64 room_id = 3;
+}

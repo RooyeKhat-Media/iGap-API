@@ -1,0 +1,31 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserRegister";
+
+message UserRegister {
+    Request request = 1;
+    uint64 phone_number = 2;
+    string country_code = 3;
+}
+
+message UserRegisterResponse {
+    Response response = 1;
+    string username = 2;
+    uint64 user_id = 3;
+    string author_hash = 4;
+
+    enum Method {
+        VERIFY_CODE_SMS = 0;
+        VERIFY_CODE_SOCKET = 1;
+        VERIFY_CODE_SMS_SOCKET = 2;
+    }
+    Method method = 5;
+    uint32 resend_delay = 6;
+    repeated uint64 sms_number = 7;
+    string verify_code_regex = 8;
+    uint32 verify_code_digit_count = 9;
+}

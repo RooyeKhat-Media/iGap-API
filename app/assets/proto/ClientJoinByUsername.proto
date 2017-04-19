@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoClientJoinByUsername";
+
+message ClientJoinByUsername {
+    Request request = 1;
+    string username = 2;
+}
+
+message ClientJoinByUsernameResponse {
+    Response response = 1;
+}

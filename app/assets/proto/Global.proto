@@ -1,0 +1,357 @@
+syntax = "proto3";
+package proto;
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoGlobal";
+
+enum Gender {
+    UNKNOWN = 0;
+    MALE = 1;
+    FEMALE = 2;
+}
+
+enum Device {
+    UNKNOWN_DEVICE = 0;
+    PC = 1;
+    TABLET = 2;
+    MOBILE = 3;
+}
+
+enum Platform {
+    UNKNOWN_PLATFORM = 0;
+    ANDROID = 1;
+    IOS = 2;
+    MAC_OS = 3;
+    WINDOWS = 4;
+    LINUX = 5;
+    BLACK_BERRY = 6;
+}
+
+enum Language {
+    EN_US = 0;
+    FA_IR = 1;
+}
+
+enum RoomMessageType {
+    TEXT = 0;
+    IMAGE = 1;
+    IMAGE_TEXT = 2;
+    VIDEO = 3;
+    VIDEO_TEXT = 4;
+    AUDIO = 5;
+    AUDIO_TEXT = 6;
+    VOICE = 7;
+    GIF = 8;
+    GIF_TEXT = 14;
+    FILE = 9;
+    FILE_TEXT = 10;
+    LOCATION = 11;
+    LOG = 12;
+    CONTACT = 13;
+}
+
+enum RoomMessageStatus {
+    FAILED = 0;
+    SENDING = 1;
+    SENT = 2;
+    DELIVERED = 3;
+    SEEN = 4;
+}
+
+enum RoomMessageReaction {
+    THUMBS_UP = 0;
+    THUMBS_DOWN = 1;
+}
+
+message RoomMessageLocation {
+    double lat = 1;
+    double lon = 2;
+}
+
+message RoomMessageLog {
+    enum Type {
+        USER_JOINED = 0;
+        USER_DELETED = 1;
+        ROOM_CREATED = 2;
+        MEMBER_ADDED = 3;
+        MEMBER_KICKED = 4;
+        MEMBER_LEFT = 5;
+        ROOM_CONVERTED_TO_PUBLIC = 6;
+        ROOM_CONVERTED_TO_PRIVATE = 7;
+        MEMBER_JOINED_BY_INVITE_LINK = 8;
+        ROOM_DELETED = 9;
+    }
+    Type type = 1;
+
+    enum ExtraType {
+        NO_EXTRA = 0;
+        TARGET_USER = 1;
+    }
+    ExtraType extra_type = 2;
+
+    message TargetUser {
+        uint64 id = 1;
+    }
+    TargetUser target_user = 3;
+}
+
+message RoomMessageContact {
+    string first_name = 1;
+    string last_name = 2;
+    string nickname = 3;
+    repeated string phone = 4;
+    repeated string email = 5;
+}
+
+message RoomMessageForwardFrom {
+    uint64 room_id = 1;
+    uint64 message_id = 2;
+}
+
+message RegisteredUser {
+    uint64 id = 1;
+    string username = 2;
+    uint64 phone = 3;
+    string first_name = 4;
+    string last_name = 5;
+    string display_name = 6;
+    string initials = 7;
+    string color = 8;
+    enum Status {
+        LONG_TIME_AGO = 0;
+        LAST_MONTH = 1;
+        LAST_WEEK = 2;
+        ONLINE = 3;
+        EXACTLY = 4;
+        RECENTLY = 5;
+        SUPPORT = 6;
+        SERVICE_NOTIFICATIONS = 7;
+    }
+    Status status = 9;
+    uint32 last_seen = 10;
+    uint32 avatar_count = 11;
+    Avatar avatar = 12;
+    bool mutual = 13;
+    bool deleted = 14;
+    string cache_id = 15;
+}
+
+enum ClientAction {
+    CANCEL = 0;
+    TYPING = 1;
+    SENDING_IMAGE = 2;
+    CAPTURING_IMAGE = 3;
+    SENDING_VIDEO = 4;
+    CAPTURING_VIDEO = 5;
+    SENDING_AUDIO = 6;
+    RECORDING_VOICE = 7;
+    SENDING_VOICE = 8;
+    SENDING_DOCUMENT = 9;
+    SENDING_GIF = 10;
+    SENDING_FILE = 11;
+    SENDING_LOCATION = 12;
+    CHOOSING_CONTACT = 13;
+    PAINTING = 14;
+}
+
+message Avatar {
+    uint64 id = 1;
+    File file = 2;
+}
+
+message RoomMessage {
+    uint64 message_id = 1;
+    uint64 message_version = 2;
+    RoomMessageStatus status = 3;
+    uint64 status_version = 4;
+    RoomMessageType message_type = 5;
+    string message = 6;
+    File attachment = 7;
+
+    message Author {
+        string hash = 1;
+
+        message User {
+            uint64 user_id = 1;
+            string cache_id = 2;
+        }
+        User user = 2;
+
+        message Room {
+            uint64 room_id = 1;
+        }
+        Room room = 3;
+    }
+    Author author = 8;
+
+    RoomMessageLocation location = 9;
+    RoomMessageLog log = 10;
+    RoomMessageContact contact = 11;
+    bool edited = 12;
+    uint32 create_time = 13;
+    uint32 update_time = 14;
+    bool deleted = 15;
+
+    RoomMessage forward_from = 16;
+    RoomMessage reply_to = 17;
+
+    uint64 previous_message_id = 18;
+
+    enum ExtraType {
+        NO_EXTRA = 0;
+        CHANNEL_EXTRA = 1;
+    }
+
+    ExtraType extra_type = 19;
+
+    message ChannelExtra {
+        string signature = 1;
+        string views_label = 2;
+        string thumbs_up_label = 3;
+        string thumbs_down_label = 4;
+    }
+    ChannelExtra channel_extra = 20;
+}
+
+message RoomDraft {
+    string message = 1;
+    uint64 reply_to = 2;
+}
+
+message Room {
+    uint64 id = 1;
+    enum Type {
+        CHAT = 0;
+        GROUP = 1;
+        CHANNEL = 2;
+    }
+    Type type = 2;
+    string title = 3;
+    string initials = 4;
+    string color = 5;
+    uint32 unread_count = 6;
+    RoomMessage last_message = 7;
+    bool read_only = 8;
+    bool is_participant = 9;
+    RoomDraft draft = 10;
+    RoomMessage first_unread_message = 14;
+
+    ChatRoom chat_room_extra = 11;
+    GroupRoom group_room_extra = 12;
+    ChannelRoom channel_room_extra = 13;
+
+}
+
+message ChatRoom {
+    RegisteredUser peer = 1;
+}
+
+message GroupRoom {
+    enum Type {
+        PRIVATE_ROOM = 0;
+        PUBLIC_ROOM = 1;
+    }
+    Type type = 1;
+
+    enum Role {
+        MEMBER = 0;
+        MODERATOR = 1;
+        ADMIN = 2;
+        OWNER = 3;
+    }
+    Role role = 2;
+
+    uint32 participants_count = 3;
+    string participants_count_label = 4;
+    uint32 participants_count_limit = 5;
+    string participants_count_limit_label = 6;
+    string description = 7;
+    uint32 avatar_count = 8;
+    Avatar avatar = 9;
+
+    message PrivateExtra {
+        string invite_link = 1;
+        string invite_token = 2;
+    }
+    PrivateExtra private_extra = 10;
+
+    message PublicExtra {
+        string username = 1;
+    }
+    PublicExtra public_extra = 11;
+}
+
+message ChannelRoom {
+    enum Type {
+        PRIVATE_ROOM = 0;
+        PUBLIC_ROOM = 1;
+    }
+    Type type = 1;
+
+    enum Role {
+        MEMBER = 0;
+        MODERATOR = 1;
+        ADMIN = 2;
+        OWNER = 3;
+    }
+    Role role = 2;
+    uint32 participants_count = 3;
+    string participants_count_label = 4;
+    string description = 5;
+    uint32 avatar_count = 6;
+    Avatar avatar = 7;
+
+    message PrivateExtra {
+        string invite_link = 1;
+        string invite_token = 2;
+    }
+    PrivateExtra private_extra = 8;
+
+    message PublicExtra {
+        string username = 1;
+    }
+    PublicExtra public_extra = 9;
+
+    bool signature = 10;
+    uint64 seen_id = 11;
+}
+
+message Thumbnail {
+    int64 size = 1;
+    int32 width = 2;
+    int32 height = 3;
+    string cache_id = 4;
+}
+
+message File {
+    string token = 1;
+    string name = 2;
+    int64 size = 3;
+    Thumbnail large_thumbnail = 4;
+    Thumbnail small_thumbnail = 5;
+    Thumbnail waveform_thumbnail = 6;
+    int32 width = 7;
+    int32 height = 8;
+    double duration = 9;
+    string cache_id = 10;
+}
+
+
+enum PrivacyType {
+    USER_STATUS = 0;
+    AVATAR = 1;
+    GROUP_INVITE = 2;
+    CHANNEL_INVITE = 3;
+}
+
+
+enum PrivacyLevel {
+    ALLOW_ALL = 0;
+    DENY_ALL = 1;
+    ALLOW_CONTACTS = 2;
+}
+
+message Wallpaper {
+    File file = 1;
+    string color = 2;
+}

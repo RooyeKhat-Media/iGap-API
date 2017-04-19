@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoChannelAvatarDelete";
+
+message ChannelAvatarDelete {
+    Request request = 1;
+    uint64 id = 2;
+    uint64 room_id = 3;
+}
+
+message ChannelAvatarDeleteResponse {
+    Response response = 1;
+    uint64 id = 2;
+    uint64 room_id = 3;
+}

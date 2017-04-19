@@ -1,0 +1,34 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserSessionGetActiveList";
+
+message UserSessionGetActiveList {
+    Request request = 1;
+}
+
+message UserSessionGetActiveListResponse {
+    Response response = 1;
+    message Session {
+        uint64 session_id = 1;
+        string app_name = 2;
+        uint32 app_id = 3;
+        uint32 app_build_version = 4;
+        string app_version = 5;
+        Platform platform = 6;
+        string platform_version = 7;
+        Device device = 8;
+        string device_name = 9;
+        Language language = 10;
+        string country = 11;
+        bool current = 12;
+        uint32 create_time = 13;
+        uint32 active_time = 14;
+        string ip = 15;
+    }
+    repeated Session session = 2;
+}

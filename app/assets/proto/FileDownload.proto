@@ -1,0 +1,26 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoFileDownload";
+
+message FileDownload {
+    Request request = 1;
+    string token = 2;
+    int64 offset = 3;
+    int32 max_limit = 4;
+    enum Selector {
+        FILE = 0;
+        SMALL_THUMBNAIL = 1;
+        LARGE_THUMBNAIL = 2;
+        WAVEFORM_THUMBNAIL = 3;
+    }
+    Selector selector = 5;
+}
+
+message FileDownloadResponse {
+    Response response = 1;
+    bytes bytes = 4;
+}

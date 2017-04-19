@@ -1,0 +1,19 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoChannelUpdateUsername";
+
+message ChannelUpdateUsername {
+    Request request = 1;
+    string username = 2;
+    uint64 room_id = 3;
+}
+
+message ChannelUpdateUsernameResponse {
+    Response response = 1;
+    string username = 2;
+    uint64 room_id = 3;
+}

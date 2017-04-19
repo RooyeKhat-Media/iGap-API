@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoQrCodeJoin";
+
+message QrCodeJoin {
+    Request request = 1;
+    string invite_token = 2;
+}
+
+message QrCodeJoinResponse {
+    Response response = 1;
+    bytes qr_code_image = 2;
+}

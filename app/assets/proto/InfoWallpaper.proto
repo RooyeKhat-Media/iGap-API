@@ -1,0 +1,24 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoInfoWallpaper";
+
+message InfoWallpaper {
+    Request request = 1;
+
+    enum Fit {
+        PHONE = 0;
+        TABLET = 1;
+        DESKTOP = 2;
+    }
+    Fit fit = 2;
+}
+
+message InfoWallpaperResponse {
+    Response response = 1;
+    repeated Wallpaper wallpaper = 2;
+}

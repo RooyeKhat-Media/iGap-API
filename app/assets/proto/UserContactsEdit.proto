@@ -1,0 +1,21 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserContactsEdit";
+
+message UserContactsEdit {
+    Request request = 1;
+    uint64 phone = 2;
+    string first_name = 3;
+    string last_name = 4;
+}
+
+message UserContactsEditResponse {
+    Response response = 1;
+    uint64 phone = 2;
+    string first_name = 3;
+    string last_name = 4;
+}

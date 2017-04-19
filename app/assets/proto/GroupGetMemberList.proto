@@ -1,0 +1,30 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoGroupGetMemberList";
+
+message GroupGetMemberList {
+    Request request = 1;
+    uint64 room_id = 2;
+
+    enum FilterRole {
+        ALL = 0;
+        MEMBER = 1;
+        MODERATOR = 2;
+        ADMIN = 3;
+    }
+    FilterRole filter_role = 3;
+}
+
+message GroupGetMemberListResponse {
+    Response response = 1;
+    message Member {
+        uint64 userId = 1;
+        GroupRoom.Role role = 2;
+    }
+    repeated Member member = 2;
+}

@@ -1,0 +1,18 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoUserProfileGender";
+
+message UserProfileSetGender {
+    Request request = 1;
+    Gender gender = 2;
+}
+
+message UserProfileSetGenderResponse {
+    Response response = 1;
+    Gender gender = 2;
+}

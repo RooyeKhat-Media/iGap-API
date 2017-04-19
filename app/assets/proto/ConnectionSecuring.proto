@@ -1,0 +1,31 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoConnectionSecuring";
+
+message ConnectionSecuringResponse {
+    Response response = 1;
+    string public_key = 2;
+    uint32 symmetric_key_length = 3;
+    uint32 heartbeat_interval = 4;
+    string primary_node_name = 5;
+}
+
+message ConnectionSymmetricKey {
+    Request request = 1;
+    bytes symmetric_key = 2;
+}
+
+message ConnectionSymmetricKeyResponse {
+    Response response = 1;
+    enum Status {
+        REJECTED = 0;
+        ACCEPTED = 1;
+    }
+    Status status = 2;
+    string symmetric_method = 3;
+    uint32 symmetric_iv_size = 4;
+}

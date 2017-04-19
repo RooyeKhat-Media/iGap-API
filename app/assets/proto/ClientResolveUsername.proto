@@ -1,0 +1,25 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "com.iGap.proto";
+option java_outer_classname = "ProtoClientResolveUsername";
+
+message ClientResolveUsername {
+    Request request = 1;
+    string username = 2;
+}
+
+message ClientResolveUsernameResponse {
+    Response response = 1;
+    enum Type {
+        USER = 0;
+        ROOM = 1;
+    }
+    Type type = 2;
+
+    RegisteredUser user = 3;
+    Room room = 4;
+}
