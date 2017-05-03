@@ -51,6 +51,7 @@
     * [RecoverPasswordByAnswers](user/twoStepVerification/RecoverPasswordByAnswers.md) 
     * [ChangeRecoveryQuestion](user/twoStepVerification/ChangeRecoveryQuestion.md) 
     * [ChangeHint](user/twoStepVerification/ChangeHint.md) 
+    * [ResendVerifyEmail](user/twoStepVerification/ResendVerifyEmail.md) 
 * Privacy
     * [GetRule](user/privacy/GetRule.md) 
     * :o: [SetRule](user/privacy/SetRule.md) 
@@ -148,6 +149,7 @@
 * [SubscribeToRoom](client/SubscribeToRoom.md)
 * [UnsubscribeFromRoom](client/UnsubscribeFromRoom.md)
 * [SearchUsername](client/SearchUsername.md)
+* [CountRoomHistory](client/CountRoomHistory.md)
 
 # File
 * [Upload](file/Upload.md)

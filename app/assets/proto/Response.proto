@@ -1,7 +1,7 @@
 syntax = "proto3";
 package proto;
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoResponse";
 
 message Response {

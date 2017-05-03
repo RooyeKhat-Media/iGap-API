@@ -436,6 +436,12 @@ This operation is not permitted for request [#201](../proto/README.md#action_201
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+### Error 234 - CHAT_SEND_MESSAGE_LIMIT_REACHED
+Limit reached for request [#201](../proto/README.md#action_201)
+
+| Minor Code 	| Detail 	                                                        | Reaction 	|
+|------------	|--------	                                                        |----------	|
+| 1          	| You can only send messages to mutual contacts at the moment     	| *        	|
 
 ### Error 206 - CHAT_UPDATE_STATUS_BAD_PAYLOAD
 Bad payload for request [#202](../proto/README.md#action_202)

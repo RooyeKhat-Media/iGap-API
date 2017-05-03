@@ -4,7 +4,7 @@ import "Request.proto";
 import "Response.proto";
 import "Global.proto";
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupGetMemberList";
 
 message GroupGetMemberList {
@@ -18,6 +18,8 @@ message GroupGetMemberList {
         ADMIN = 3;
     }
     FilterRole filter_role = 3;
+
+    Pagination pagination = 4;
 }
 
 message GroupGetMemberListResponse {

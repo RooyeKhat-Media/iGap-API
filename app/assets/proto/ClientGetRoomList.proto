@@ -4,11 +4,12 @@ import "Request.proto";
 import "Response.proto";
 import "Global.proto";
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoClientGetRoomList";
 
 message ClientGetRoomList {
     Request request = 1;
+    Pagination pagination = 2;
 }
 
 message ClientGetRoomListResponse {

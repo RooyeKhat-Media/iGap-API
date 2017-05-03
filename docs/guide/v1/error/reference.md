@@ -246,6 +246,7 @@
 * 10122 - [USER_TWO_STEP_VERIFICATION_REQUEST_RECOVERY_TOKEN_NO_PASSWORD](README.md#error-10122-user_two_step_verification_request_recovery_token_no_password)
 * 10123 - [USER_TWO_STEP_VERIFICATION_REQUEST_RECOVERY_TOKEN_NO_RECOVERY_EMAIL](README.md#error-10123-user_two_step_verification_request_recovery_token_no_recovery_email)
 * 10124 - [USER_TWO_STEP_VERIFICATION_REQUEST_RECOVERY_TOKEN_MAX_TRY_LOCK](README.md#error-10124-user_two_step_verification_request_recovery_token_max_try_lock)
+* 10154 - [USER_TWO_STEP_VERIFICATION_REQUEST_RECOVERY_TOKEN_FORBIDDEN](README.md#error-10154-user_two_step_verification_request_recovery_token_forbidden)
 
 ---
 
@@ -255,6 +256,7 @@
 * 10128 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_TOKEN_EXPIRED_TOKEN](README.md#error-10128-user_two_step_verification_recover_password_by_token_expired_token)
 * 10129 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_TOKEN_INVALID_TOKEN](README.md#error-10129-user_two_step_verification_recover_password_by_token_invalid_token)
 * 10130 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_TOKEN_NO_PASSWORD](README.md#error-10130-user_two_step_verification_recover_password_by_token_no_password)
+* 10155 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_TOKEN_FORBIDDEN](README.md#error-10155-user_two_step_verification_recover_password_by_token_forbidden)
 
 ---
 
@@ -263,6 +265,7 @@
 * 10133 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_ANSWERS_MAX_TRY_LOCK](README.md#error-10133-user_two_step_verification_recover_password_by_answers_max_try_lock)
 * 10134 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_ANSWERS_INVALID_ANSWERS](README.md#error-10134-user_two_step_verification_recover_password_by_answers_invalid_answers)
 * 10135 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_ANSWERS_NO_PASSWORD](README.md#error-10135-user_two_step_verification_recover_password_by_answers_no_password)
+* 10156 - [USER_TWO_STEP_VERIFICATION_RECOVER_PASSWORD_BY_ANSWERS_FORBIDDEN](README.md#error-10156-user_two_step_verification_recover_password_by_answers_forbidden)
 
 ---
 
@@ -279,6 +282,13 @@
 * 10143 - [USER_TWO_STEP_VERIFICATION_CHANGE_HINT_MAX_TRY_LOCK](README.md#error-10143-user_two_step_verification_change_hint_max_try_lock)
 * 10144 - [USER_TWO_STEP_VERIFICATION_CHANGE_HINT_NO_PASSWORD](README.md#error-10144-user_two_step_verification_change_hint_no_password)
 * 10145 - [USER_TWO_STEP_VERIFICATION_CHANGE_HINT_INVALID_PASSWORD](README.md#error-10145-user_two_step_verification_change_hint_invalid_password)
+
+---
+
+* 10157 - [USER_TWO_STEP_VERIFICATION_RESEND_VERIFY_EMAIL_BAD_PAYLOAD](README.md#error-10157-user_two_step_verification_resend_verify_email_bad_payload)
+* 10158 - [USER_TWO_STEP_VERIFICATION_RESEND_VERIFY_EMAIL_INTERNAL_SERVER_ERROR](README.md#error-10158-user_two_step_verification_resend_verify_email_internal_server_error)
+* 10159 - [USER_TWO_STEP_VERIFICATION_RESEND_VERIFY_EMAIL_NO_PASSWORD](README.md#error-10159-user_two_step_verification_resend_verify_email_no_password)
+* 10160 - [USER_TWO_STEP_VERIFICATION_RESEND_VERIFY_EMAIL_NO_UNCONFIRMED_RECOVERY_EMAIL](README.md#error-10160-user_two_step_verification_resend_verify_email_no_unconfirmed_recovery_email)
 
 ---
 
@@ -309,6 +319,7 @@
 * 204 - [CHAT_SEND_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-204-chat_send_message_internal_server_error)
 * 205 - [CHAT_SEND_MESSAGE_FORBIDDEN](README.md#error-205-chat_send_message_forbidden)
 * 233 - [CHAT_SEND_MESSAGE_BLOCKED_BY_PEER](README.md#error-233-chat_send_message_blocked_by_peer)
+* 234 - [CHAT_SEND_MESSAGE_LIMIT_REACHED](README.md#error-234-chat_send_message_limit_reached)
 
 ---
 
@@ -368,6 +379,7 @@
 
 * 300 - [GROUP_CREATE_BAD_PAYLOAD](README.md#error-300-group_create_bad_payload)
 * 301 - [GROUP_CREATE_INTERNAL_SERVER_ERROR](README.md#error-301-group_create_internal_server_error)
+* 380 - [GROUP_CREATE_LIMIT_REACHED](README.md#error-380-group_create_limit_reached)
 
 ---
 
@@ -526,6 +538,7 @@
 
 * 400 - [CHANNEL_CREATE_BAD_PAYLOAD](README.md#error-400-channel_create_bad_payload)
 * 401 - [CHANNEL_CREATE_INTERNAL_SERVER_ERROR](README.md#error-401-channel_create_internal_server_error)
+* 479 - [CHANNEL_CREATE_LIMIT_REACHED](README.md#error-479-channel_create_limit_reached)
 
 ---
 
@@ -791,6 +804,12 @@
 
 * 645 - [CLIENT_SEARCH_USERNAME_BAD_PAYLOAD](README.md#error-645-client_search_username_bad_payload)
 * 646 - [CLIENT_SEARCH_USERNAME_INTERNAL_SERVER_ERROR](README.md#error-646-client_search_username_internal_server_error)
+
+---
+
+* 647 - [CLIENT_COUNT_ROOM_HISTORY_BAD_PAYLOAD](README.md#error-647-client_count_room_history_bad_payload)
+* 648 - [CLIENT_COUNT_ROOM_HISTORY_INTERNAL_SERVER_ERROR](README.md#error-648-client_count_room_history_internal_server_error)
+* 649 - [CLIENT_COUNT_ROOM_HISTORY_NOT_FOUND](README.md#error-649-client_count_room_history_not_found)
 
 # File errors 7xx
 

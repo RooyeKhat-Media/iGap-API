@@ -1,7 +1,7 @@
 syntax = "proto3";
 package proto;
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGlobal";
 
 enum Gender {
@@ -354,4 +354,9 @@ enum PrivacyLevel {
 message Wallpaper {
     File file = 1;
     string color = 2;
+}
+
+message Pagination {
+    uint32 offset = 1;
+    uint32 limit = 2;
 }

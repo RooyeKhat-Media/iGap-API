@@ -4,7 +4,7 @@ import "Request.proto";
 import "Response.proto";
 import "Global.proto";
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoChatConvertToGroup";
 
 message ChatConvertToGroup {

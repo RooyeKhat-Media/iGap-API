@@ -102,6 +102,8 @@
 | <a name="action_30141">30141</a> 	| [Details](UserTwoStepVerificationChangeRecoveryQuestionResponse.md)               | [UserTwoStepVerificationChangeRecoveryQuestionResponse](../../../../app/assets/proto/UserTwoStepVerificationChangeRecoveryQuestion.proto)         | 
 | <a name="action_142">142</a> 	    | [Details](UserTwoStepVerificationChangeHint.md)                                   | [UserTwoStepVerificationChangeHint](../../../../app/assets/proto/UserTwoStepVerificationChangeHint.proto)                                         | 
 | <a name="action_30142">30142</a> 	| [Details](UserTwoStepVerificationChangeHintResponse.md)                           | [UserTwoStepVerificationChangeHintResponse](../../../../app/assets/proto/UserTwoStepVerificationChangeHint.proto)                                 | 
+| <a name="action_146">146</a> 	    | [Details](UserTwoStepVerificationResendVerifyEmail.md)                            | [UserTwoStepVerificationResendVerifyEmail](../../../../app/assets/proto/UserTwoStepVerificationResendVerifyEmail.proto)                           | 
+| <a name="action_30146">30146</a> 	| [Details](UserTwoStepVerificationResendVerifyEmailResponse.md)                    | [UserTwoStepVerificationResendVerifyEmailResponse](../../../../app/assets/proto/UserTwoStepVerificationResendVerifyEmail.proto)                   | 
 | <a name="action_143">143</a> 	    | [Details](UserPrivacyGetRule.md)                                                  | [UserPrivacyGetRule](../../../../app/assets/proto/UserPrivacyGetRule.proto)                                                                       | 
 | <a name="action_30143">30143</a> 	| [Details](UserPrivacyGetRuleResponse.md)                                          | [UserPrivacyGetRuleResponse](../../../../app/assets/proto/UserPrivacyGetRule.proto)                                                               | 
 | <a name="action_144">144</a> 	    | [Details](UserPrivacySetRule.md)                                                  | [UserPrivacySetRule](../../../../app/assets/proto/UserPrivacySetRule.proto)                                                                       | 
@@ -295,6 +297,8 @@
 | <a name="action_30611">30611</a> 	| [Details](ClientUnsubscribeFromRoomResponse.md) | [ClientUnsubscribeFromRoomResponse](../../../../app/assets/proto/ClientUnsubscribeFromRoom.proto)           |
 | <a name="action_612">612</a> 	    | [Details](ClientSearchUsername.md)              | [ClientSearchUsername](../../../../app/assets/proto/ClientSearchUsername.proto)               	            |
 | <a name="action_30612">30612</a> 	| [Details](ClientSearchUsernameResponse.md)      | [ClientSearchUsernameResponse](../../../../app/assets/proto/ClientSearchUsername.proto)                     |
+| <a name="action_613">613</a> 	    | [Details](ClientCountRoomHistory.md)            | [ClientCountRoomHistory](../../../../app/assets/proto/ClientCountRoomHistory.proto)               	        |
+| <a name="action_30613">30613</a> 	| [Details](ClientCountRoomHistoryResponse.md)    | [ClientCountRoomHistoryResponse](../../../../app/assets/proto/ClientCountRoomHistory.proto)                 |
 
 # File 7xx , 307xx
 
@@ -332,5 +336,6 @@
 
 | Id 	                            |Details                                        | Proto file                	                                                                        |
 |----	                            |-----------------------------------            |-------------------------------------------------------------------                                    |
-| <a name="action_60000">60000</a> 	| [Details](LoginTokenResponse.md)              | [LoginTokenResponse](../../../../app/assets/proto/LoginToken.proto)               	                |
-| <a name="action_60001">60001</a> 	| [Details](TwoStepVerificationResponse.md)     | [TwoStepVerificationResponse](../../../../app/assets/proto/TwoStepVerification.proto)               	                |
+| <a name="action_60000">60000</a> 	| [Details](PushLoginTokenResponse.md)              | [PushLoginTokenResponse](../../../../app/assets/proto/PushLoginToken.proto)               	                |
+| <a name="action_60001">60001</a> 	| [Details](PushTwoStepVerificationResponse.md)     | [PushTwoStepVerificationResponse](../../../../app/assets/proto/PushTwoStepVerification.proto)               	|
+| <a name="action_60002">60002</a> 	| [Details](PushUserInfoExpiredResponse.md)         | [PushUserInfoExpiredResponse](../../../../app/assets/proto/PushUserInfoExpired.proto)               	        |

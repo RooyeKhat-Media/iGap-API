@@ -3,7 +3,7 @@ package proto;
 import "Request.proto";
 import "Response.proto";
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoFileUploadStatus";
 
 message FileUploadStatus {
@@ -17,6 +17,7 @@ message FileUploadStatusResponse {
         UPLOADING = 0;
         PROCESSING = 1;
         PROCESSED = 2;
+        CORRUPTED = 3;
     }
     Status status = 2;
     double progress = 3;

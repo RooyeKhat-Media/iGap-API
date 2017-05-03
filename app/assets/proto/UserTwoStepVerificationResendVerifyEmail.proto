@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserTwoStepVerificationResendVerifyEmail";
+
+message UserTwoStepVerificationResendVerifyEmail {
+    Request request = 1;
+}
+
+message UserTwoStepVerificationResendVerifyEmailResponse {
+    Response response = 1;
+    string unconfirmed_email_pattern = 2;
+}

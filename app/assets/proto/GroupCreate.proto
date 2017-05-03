@@ -3,7 +3,7 @@ package proto;
 import "Request.proto";
 import "Response.proto";
 
-option java_package = "com.iGap.proto";
+option java_package = "net.iGap.proto";
 option java_outer_classname = "ProtoGroupCreate";
 
 message GroupCreate {
