@@ -1,0 +1,29 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingOffer";
+
+message SignalingOffer {
+    Request request = 1;
+    uint64 called_user_id = 2;
+
+    enum Type {
+        VOICE_CALLING = 0;
+        VIDEO_CALLING = 1;
+        SCREEN_SHARING = 2;
+    }
+    Type type = 3;
+
+    string caller_sdp = 4;
+}
+
+message SignalingOfferResponse {
+    Response response = 1;
+
+    uint64 caller_user_id = 2;
+    SignalingOffer.Type type = 3;
+    string caller_sdp = 4;
+}

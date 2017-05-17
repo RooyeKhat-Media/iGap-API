@@ -31,9 +31,10 @@ message ClientCondition {
             UNCHANGED = 0;
             MUTED = 1;
             UNMUTED = 2;
-            // TODO [Amerehie] - 2016-08-10 11:48 AM - 1hour 8hour 2 days
         }
         OfflineMute offline_mute = 12;
+
+        repeated uint64 offline_listened = 13;
     }
     repeated Room rooms = 2;
 }

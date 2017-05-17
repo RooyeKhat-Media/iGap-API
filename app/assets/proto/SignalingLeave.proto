@@ -1,0 +1,26 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingLeave";
+
+message SignalingLeave {
+    Request request = 1;
+}
+
+message SignalingLeaveResponse {
+    Response response = 1;
+
+    enum Type {
+        MISSED = 0;
+        REJECTED = 1;
+        ACCEPTED = 2;
+        NOT_ANSWERED = 3;
+        UNAVAILABLE = 4;
+        DISCONNECTED = 5;
+        FINISHED = 6;
+    }
+    Type type = 2;
+}

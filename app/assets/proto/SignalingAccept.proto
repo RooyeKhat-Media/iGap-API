@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingAccept";
+
+message SignalingAccept {
+    Request request = 1;
+    string called_sdp = 2;
+}
+
+message SignalingAcceptResponse {
+    Response response = 1;
+    string called_sdp = 2;
+}

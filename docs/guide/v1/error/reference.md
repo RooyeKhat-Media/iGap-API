@@ -869,3 +869,61 @@
 
 * 808 - [QR_CODE_ADD_ME_BAD_PAYLOAD](README.md#error-808-qr_code_add_me_bad_payload)
 * 809 - [QR_CODE_ADD_ME_INTERNAL_SERVER_ERROR](README.md#error-809-qr_code_add_me_internal_server_error)
+
+# Signaling 9xx
+* 900 - [SIGNALING_GET_CONFIGURATION_BAD_PAYLOAD](README.md#error-900-signaling_get_configuration_bad_payload)
+* 901 - [SIGNALING_GET_CONFIGURATION_INTERNAL_SERVER_ERROR](README.md#error-901-signaling_get_configuration_internal_server_error)
+
+---
+
+* 902 - [SIGNALING_OFFER_BAD_PAYLOAD](README.md#error-902-signaling_offer_bad_payload)
+* 903 - [SIGNALING_OFFER_INTERNAL_SERVER_ERROR](README.md#error-903-signaling_offer_internal_server_error)
+* 904 - [SIGNALING_OFFER_FORBIDDEN](README.md#error-904-signaling_offer_forbidden)
+* 905 - [SIGNALING_OFFER_BLOCKED_BY_PEER](README.md#error-905-signaling_offer_blocked_by_peer)
+* 906 - [SIGNALING_OFFER_PRIVACY_PROTECTION](README.md#error-906-signaling_offer_privacy_protection)
+
+---
+
+* 907 - [SIGNALING_RINGING_BAD_PAYLOAD](README.md#error-907-signaling_ringing_bad_payload)
+* 908 - [SIGNALING_RINGING_INTERNAL_SERVER_ERROR](README.md#error-908-signaling_ringing_internal_server_error)
+* 909 - [SIGNALING_RINGING_FORBIDDEN](README.md#error-909-signaling_ringing_forbidden)
+
+---
+
+* 910 - [SIGNALING_ACCEPT_BAD_PAYLOAD](README.md#error-910-signaling_accept_bad_payload)
+* 911 - [SIGNALING_ACCEPT_INTERNAL_SERVER_ERROR](README.md#error-911-signaling_accept_internal_server_error)
+* 912 - [SIGNALING_ACCEPT_FORBIDDEN](README.md#error-912-signaling_accept_forbidden)
+
+---
+
+* 913 - [SIGNALING_CANDIDATE_BAD_PAYLOAD](README.md#error-913-signaling_candidate_bad_payload)
+* 914 - [SIGNALING_CANDIDATE_INTERNAL_SERVER_ERROR](README.md#error-914-signaling_candidate_internal_server_error)
+* 915 - [SIGNALING_CANDIDATE_FORBIDDEN](README.md#error-915-signaling_candidate_forbidden)
+
+---
+
+* 916 - [SIGNALING_LEAVE_BAD_PAYLOAD](README.md#error-916-signaling_leave_bad_payload)
+* 917 - [SIGNALING_LEAVE_INTERNAL_SERVER_ERROR](README.md#error-917-signaling_leave_internal_server_error)
+* 918 - [SIGNALING_LEAVE_FORBIDDEN](README.md#error-918-signaling_leave_forbidden)
+
+---
+
+* 919 - [SIGNALING_SESSION_HOLD_BAD_PAYLOAD](README.md#error-919-signaling_session_hold_bad_payload)
+* 920 - [SIGNALING_SESSION_HOLD_INTERNAL_SERVER_ERROR](README.md#error-920-signaling_session_hold_internal_server_error)
+* 921 - [SIGNALING_SESSION_HOLD_FORBIDDEN](README.md#error-921-signaling_session_hold_forbidden)
+
+---
+
+* 922 - [SIGNALING_GET_LOG_BAD_PAYLOAD](README.md#error-922-signaling_get_log_bad_payload)
+* 923 - [SIGNALING_GET_LOG_INTERNAL_SERVER_ERROR](README.md#error-923-signaling_get_log_internal_server_error)
+
+---
+
+* 924 - [SIGNALING_CLEAR_LOG_BAD_PAYLOAD](README.md#error-924-signaling_clear_log_bad_payload)
+* 925 - [SIGNALING_CLEAR_LOG_INTERNAL_SERVER_ERROR](README.md#error-925-signaling_clear_log_internal_server_error)
+
+---
+
+* 926 - [SIGNALING_RATE_BAD_PAYLOAD](README.md#error-926-signaling_rate_bad_payload)
+* 927 - [SIGNALING_RATE_INTERNAL_SERVER_ERROR](README.md#error-927-signaling_rate_internal_server_error)
+* 928 - [SIGNALING_RATE_FORBIDDEN](README.md#error-928-signaling_rate_forbidden)

@@ -165,3 +165,15 @@
 * :triangular_flag_on_post: [NewDevice](qrCode/NewDevice.md)
 * [AddContact](qrCode/AddContact.md)
 * [AddMe](qrCode/AddMe.md)
+
+# Signaling
+* [GetConfiguration](signaling/GetConfiguration.md)
+* :o: [Offer](signaling/Offer.md)
+* :o: [Ringing](signaling/Ringing.md)
+* :o: [Accept](signaling/Accept.md)
+* :o: [Candidate](signaling/Candidate.md)
+* :o: [Leave](signaling/Leave.md)
+* :o: [SessionHold](signaling/SessionHold.md)
+* [GetLog](signaling/GetLog.md)
+* :o: [ClearLog](signaling/ClearLog.md)
+* [Rate](signaling/Rate.md)

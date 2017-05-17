@@ -1,0 +1,37 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+import "SignalingOffer.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingGetLog";
+
+message SignalingGetLog {
+    Request request = 1;
+    Pagination pagination = 2;
+}
+
+message SignalingGetLogResponse {
+    Response response = 1;
+
+    message SignalingLog {
+        uint64 id = 1;
+        SignalingOffer.Type type = 2;
+
+        enum Status {
+            MISSED = 0;
+            CANCELED = 1;
+            INCOMING = 2;
+            OUTGOING = 3;
+        }
+        Status status = 3;
+
+        RegisteredUser peer = 4;
+        uint32 offer_time = 5;
+        uint32 duration = 6;
+    }
+
+    repeated SignalingLog signaling_log = 2;
+}

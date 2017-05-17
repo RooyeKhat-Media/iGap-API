@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingSessionHold";
+
+message SignalingSessionHold {
+    Request request = 1;
+    bool hold = 2;
+}
+
+message SignalingSessionHoldResponse {
+    Response response = 1;
+    bool hold = 2;
+}

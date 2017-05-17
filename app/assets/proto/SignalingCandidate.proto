@@ -1,0 +1,21 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingCandidate";
+
+message SignalingCandidate {
+    Request request = 1;
+    string candidate = 2;
+    string sdp_m_id = 3;
+    uint32 sdp_m_line_index = 4;
+}
+
+message SignalingCandidateResponse {
+    Response response = 1;
+    string peer_candidate = 2;
+    string peer_sdp_m_id = 3;
+    uint32 peer_sdp_m_line_index = 4;
+}

@@ -50,10 +50,10 @@
 | <a name="action_30116">30116</a> 	| [Details](UserAvatarGetListResponse.md)                                           | [UserAvatarGetListResponse](../../../../app/assets/proto/UserAvatarGetList.proto)                                                                 |
 | <a name="action_117">117</a> 	    | [Details](UserInfo.md)                                                            | [UserInfo](../../../../app/assets/proto/UserInfo.proto)               	                                                                        |
 | <a name="action_30117">30117</a> 	| [Details](UserInfoResponse.md)                                                    | [UserInfoResponse](../../../../app/assets/proto/UserInfo.proto)                                                                                   |
-| <a name="action_118">118</a> 	    | [Details](GetDeleteToken.md)                                                      | [GetDeleteToken](../../../../app/assets/proto/GetDeleteToken.proto)               	                                                            |
-| <a name="action_30118">30118</a> 	| [Details](GetDeleteTokenResponse.md)                                              | [GetDeleteTokenResponse](../../../../app/assets/proto/GetDeleteToken.proto)                                                                       |
-| <a name="action_119">119</a> 	    | [Details](Delete.md)                                                              | [Delete](../../../../app/assets/proto/Delete.proto)               	                                                                            |
-| <a name="action_30119">30119</a> 	| [Details](DeleteResponse.md)                                                      | [DeleteResponse](../../../../app/assets/proto/Delete.proto)                                                                                       |
+| <a name="action_118">118</a> 	    | [Details](UserGetDeleteToken.md)                                                  | [UserGetDeleteToken](../../../../app/assets/proto/UserGetDeleteToken.proto)               	                                                    |
+| <a name="action_30118">30118</a> 	| [Details](UserGetDeleteTokenResponse.md)                                          | [UserGetDeleteTokenResponse](../../../../app/assets/proto/UserGetDeleteToken.proto)                                                               |
+| <a name="action_119">119</a> 	    | [Details](UserDelete.md)                                                          | [UserDelete](../../../../app/assets/proto/UserDelete.proto)               	                                                                    |
+| <a name="action_30119">30119</a> 	| [Details](UserDeleteResponse.md)                                                  | [UserDeleteResponse](../../../../app/assets/proto/UserDelete.proto)                                                                               |
 | <a name="action_120">120</a> 	    | [Details](UserProfileSetSelfRemove.md)                                            | [UserProfileSetSelfRemove](../../../../app/assets/proto/UserProfileSetSelfRemove.proto)               	                                        |
 | <a name="action_30120">30120</a> 	| [Details](UserProfileSetSelfRemoveResponse.md)                                    | [UserProfileSetSelfRemoveResponse](../../../../app/assets/proto/UserProfileSetSelfRemove.proto)                                                   |
 | <a name="action_121">121</a> 	    | [Details](UserProfileGetSelfRemove.md)                                            | [UserProfileGetSelfRemove](../../../../app/assets/proto/UserProfileGetSelfRemove.proto)               	                                        |
@@ -332,10 +332,36 @@
 | <a name="action_804">804</a> 	    | [Details](QrCodeAddMe.md)                    | [QrCodeAddMe](../../../../app/assets/proto/QrCodeAddMe.proto)               	                    |
 | <a name="action_30804">30804</a> 	| [Details](QrCodeAddMeResponse.md)            | [QrCodeAddMeResponse](../../../../app/assets/proto/QrCodeAddMe.proto)               	            |
 
+# Signaling 9xx , 309xx
+
+| Id 	                            |Details                                            | Proto file                	                                                                        |
+|----	                            |-----------------------------------                |-------------------------------------------------------------------                                    |
+| <a name="action_900">900</a> 	    | [Details](SignalingGetConfiguration.md)           | [SignalingGetConfiguration](../../../../app/assets/proto/SignalingGetConfiguration.proto)             |
+| <a name="action_30900">30900</a> 	| [Details](SignalingGetConfigurationResponse.md)   | [SignalingGetConfigurationResponse](../../../../app/assets/proto/SignalingGetConfiguration.proto)     |
+| <a name="action_901">901</a> 	    | [Details](SignalingOffer.md)                      | [SignalingOffer](../../../../app/assets/proto/SignalingOffer.proto)                                   |
+| <a name="action_30901">30901</a> 	| [Details](SignalingOfferResponse.md)              | [SignalingOfferResponse](../../../../app/assets/proto/SignalingOffer.proto)                           |
+| <a name="action_902">902</a> 	    | [Details](SignalingRinging.md)                    | [SignalingRinging](../../../../app/assets/proto/SignalingRinging.proto)                               |
+| <a name="action_30902">30902</a> 	| [Details](SignalingRingingResponse.md)            | [SignalingRingingResponse](../../../../app/assets/proto/SignalingRinging.proto)                       |
+| <a name="action_903">903</a> 	    | [Details](SignalingAccept.md)                     | [SignalingAccept](../../../../app/assets/proto/SignalingAccept.proto)                                 |
+| <a name="action_30903">30903</a> 	| [Details](SignalingAcceptResponse.md)             | [SignalingAcceptResponse](../../../../app/assets/proto/SignalingAccept.proto)                         |
+| <a name="action_904">904</a> 	    | [Details](SignalingCandidate.md)                  | [SignalingCandidate](../../../../app/assets/proto/SignalingCandidate.proto)                           |
+| <a name="action_30904">30904</a> 	| [Details](SignalingCandidateResponse.md)          | [SignalingCandidateResponse](../../../../app/assets/proto/SignalingCandidate.proto)                   |
+| <a name="action_905">905</a> 	    | [Details](SignalingLeave.md)                      | [SignalingLeave](../../../../app/assets/proto/SignalingLeave.proto)                                   |
+| <a name="action_30905">30905</a> 	| [Details](SignalingLeaveResponse.md)              | [SignalingLeaveResponse](../../../../app/assets/proto/SignalingLeave.proto)                           |
+| <a name="action_906">906</a> 	    | [Details](SignalingSessionHold.md)                | [SignalingSessionHold](../../../../app/assets/proto/SignalingSessionHold.proto)                       |
+| <a name="action_30906">30906</a> 	| [Details](SignalingSessionHoldResponse.md)        | [SignalingSessionHoldResponse](../../../../app/assets/proto/SignalingSessionHold.proto)               |
+| <a name="action_907">907</a> 	    | [Details](SignalingGetLog.md)                     | [SignalingGetLog](../../../../app/assets/proto/SignalingGetLog.proto)                                 |
+| <a name="action_30907">30907</a> 	| [Details](SignalingGetLogResponse.md)             | [SignalingGetLogResponse](../../../../app/assets/proto/SignalingGetLog.proto)                         |
+| <a name="action_908">908</a> 	    | [Details](SignalingClearLog.md)                   | [SignalingClearLog](../../../../app/assets/proto/SignalingClearLog.proto)                             |
+| <a name="action_30908">30908</a> 	| [Details](SignalingClearLogResponse.md)           | [SignalingClearLogResponse](../../../../app/assets/proto/SignalingClearLog.proto)                     |
+| <a name="action_909">909</a> 	    | [Details](SignalingRate.md)                       | [SignalingRate](../../../../app/assets/proto/SignalingRate.proto)                                     |
+| <a name="action_30909">30909</a> 	| [Details](SignalingRateResponse.md)               | [SignalingRateResponse](../../../../app/assets/proto/SignalingRate.proto)                             |
+
 # Push 600xx
 
-| Id 	                            |Details                                        | Proto file                	                                                                        |
-|----	                            |-----------------------------------            |-------------------------------------------------------------------                                    |
-| <a name="action_60000">60000</a> 	| [Details](PushLoginTokenResponse.md)              | [PushLoginTokenResponse](../../../../app/assets/proto/PushLoginToken.proto)               	                |
-| <a name="action_60001">60001</a> 	| [Details](PushTwoStepVerificationResponse.md)     | [PushTwoStepVerificationResponse](../../../../app/assets/proto/PushTwoStepVerification.proto)               	|
-| <a name="action_60002">60002</a> 	| [Details](PushUserInfoExpiredResponse.md)         | [PushUserInfoExpiredResponse](../../../../app/assets/proto/PushUserInfoExpired.proto)               	        |
+| Id 	                            |Details                                            | Proto file                	                                                                        |
+|----	                            |-----------------------------------                |-------------------------------------------------------------------                                    |
+| <a name="action_60000">60000</a> 	| [Details](PushLoginTokenResponse.md)              | [PushLoginTokenResponse](../../../../app/assets/proto/PushLoginToken.proto)               	        |
+| <a name="action_60001">60001</a> 	| [Details](PushTwoStepVerificationResponse.md)     | [PushTwoStepVerificationResponse](../../../../app/assets/proto/PushTwoStepVerification.proto)         |
+| <a name="action_60002">60002</a> 	| [Details](PushUserInfoExpiredResponse.md)         | [PushUserInfoExpiredResponse](../../../../app/assets/proto/PushUserInfoExpired.proto)               	|
+| <a name="action_60003">60003</a> 	| [Details](PushRateSignalingResponse.md)           | [PushRateSignalingResponse](../../../../app/assets/proto/PushRateSignaling.proto)               	    |

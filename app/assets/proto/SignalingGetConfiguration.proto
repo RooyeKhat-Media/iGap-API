@@ -1,0 +1,26 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoSignalingGetConfiguration";
+
+message SignalingGetConfiguration {
+    Request request = 1;
+}
+
+message SignalingGetConfigurationResponse {
+    Response response = 1;
+
+    message IceServer {
+        string url = 1;
+        string credential = 2;
+        string username = 3;
+    }
+    repeated IceServer ice_server = 2;
+
+    bool voice_calling = 3;
+    bool video_calling = 4;
+    bool screen_sharing = 5;
+}

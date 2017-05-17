@@ -17,6 +17,7 @@ message ConnectionSecuringResponse {
 message ConnectionSymmetricKey {
     Request request = 1;
     bytes symmetric_key = 2;
+    uint32 version = 3;
 }
 
 message ConnectionSymmetricKeyResponse {
@@ -28,4 +29,5 @@ message ConnectionSymmetricKeyResponse {
     Status status = 2;
     string symmetric_method = 3;
     uint32 symmetric_iv_size = 4;
+    bool security_issue = 5;
 }
