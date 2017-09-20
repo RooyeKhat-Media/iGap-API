@@ -870,7 +870,8 @@
 * 808 - [QR_CODE_ADD_ME_BAD_PAYLOAD](README.md#error-808-qr_code_add_me_bad_payload)
 * 809 - [QR_CODE_ADD_ME_INTERNAL_SERVER_ERROR](README.md#error-809-qr_code_add_me_internal_server_error)
 
-# Signaling 9xx
+# Signaling errors 9xx
+
 * 900 - [SIGNALING_GET_CONFIGURATION_BAD_PAYLOAD](README.md#error-900-signaling_get_configuration_bad_payload)
 * 901 - [SIGNALING_GET_CONFIGURATION_INTERNAL_SERVER_ERROR](README.md#error-901-signaling_get_configuration_internal_server_error)
 
@@ -927,3 +928,47 @@
 * 926 - [SIGNALING_RATE_BAD_PAYLOAD](README.md#error-926-signaling_rate_bad_payload)
 * 927 - [SIGNALING_RATE_INTERNAL_SERVER_ERROR](README.md#error-927-signaling_rate_internal_server_error)
 * 928 - [SIGNALING_RATE_FORBIDDEN](README.md#error-928-signaling_rate_forbidden)
+
+# Geo errors 10xx
+
+* 1000 - [GEO_GET_REGISTER_STATUS_BAD_PAYLOAD](README.md#error-1000-geo_get_register_status_bad_payload)
+* 1001 - [GEO_GET_REGISTER_STATUS_INTERNAL_SERVER_ERROR](README.md#error-1001-geo_get_register_status_internal_server_error)
+
+---
+
+* 1002 - [GEO_REGISTER_BAD_PAYLOAD](README.md#error-1002-geo_register_bad_payload)
+* 1003 - [GEO_REGISTER_INTERNAL_SERVER_ERROR](README.md#error-1003-geo_register_internal_server_error)
+
+---
+
+* 1004 - [GEO_UPDATE_POSITION_BAD_PAYLOAD](README.md#error-1004-geo_update_position_bad_payload)
+* 1005 - [GEO_UPDATE_POSITION_INTERNAL_SERVER_ERROR](README.md#error-1005-geo_update_position_internal_server_error)
+* 1006 - [GEO_UPDATE_POSITION_FORBIDDEN](README.md#error-1006-geo_update_position_forbidden)
+
+---
+
+* 1007 - [GEO_GET_COMMENT_BAD_PAYLOAD](README.md#error-1007-geo_get_comment_bad_payload)
+* 1008 - [GEO_GET_COMMENT_INTERNAL_SERVER_ERROR](README.md#error-1008-geo_get_comment_internal_server_error)
+* 1009 - [GEO_GET_COMMENT_FORBIDDEN](README.md#error-1009-geo_get_comment_forbidden)
+
+---
+
+* 1010 - [GEO_UPDATE_COMMENT_BAD_PAYLOAD](README.md#error-1010-geo_update_comment_bad_payload)
+* 1011 - [GEO_UPDATE_COMMENT_INTERNAL_SERVER_ERROR](README.md#error-1011-geo_update_comment_internal_server_error)
+* 1012 - [GEO_UPDATE_COMMENT_FORBIDDEN](README.md#error-1012-geo_update_comment_forbidden)
+
+---
+
+* 1013 - [GEO_GET_NEARBY_DISTANCE_BAD_PAYLOAD](README.md#error-1013-geo_get_nearby_distance_bad_payload)
+* 1014 - [GEO_GET_NEARBY_DISTANCE_INTERNAL_SERVER_ERROR](README.md#error-1014-geo_get_nearby_distance_internal_server_error)
+* 1015 - [GEO_GET_NEARBY_DISTANCE_FORBIDDEN](README.md#error-1015-geo_get_nearby_distance_forbidden)
+
+---
+
+* 1016 - [GEO_GET_NEARBY_COORDINATE_BAD_PAYLOAD](README.md#error-1016-geo_get_nearby_coordinate_bad_payload)
+* 1017 - [GEO_GET_NEARBY_COORDINATE_INTERNAL_SERVER_ERROR](README.md#error-1017-geo_get_nearby_coordinate_internal_server_error)
+* 1018 - [GEO_GET_NEARBY_COORDINATE_FORBIDDEN](README.md#error-1018-geo_get_nearby_coordinate_forbidden)
+---
+
+* 1019 - [GEO_GET_CONFIGURATION_BAD_PAYLOAD](README.md#error-1019-geo_get_configuration_bad_payload)
+* 1020 - [GEO_GET_CONFIGURATION_INTERNAL_SERVER_ERROR](README.md#error-1020-geo_get_configuration_internal_server_error)

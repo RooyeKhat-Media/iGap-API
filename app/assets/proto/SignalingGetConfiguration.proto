@@ -23,4 +23,5 @@ message SignalingGetConfigurationResponse {
     bool voice_calling = 3;
     bool video_calling = 4;
     bool screen_sharing = 5;
+    bool secret_chat = 6;
 }

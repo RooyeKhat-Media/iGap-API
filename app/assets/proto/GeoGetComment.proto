@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoGeoGetComment";
+
+message GeoGetComment {
+    Request request = 1;
+    uint64 user_id = 2;
+}
+
+message GeoGetCommentResponse {
+    Response response = 1;
+    string comment = 2;
+}

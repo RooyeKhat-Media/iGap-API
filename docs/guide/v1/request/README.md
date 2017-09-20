@@ -177,3 +177,13 @@
 * [GetLog](signaling/GetLog.md)
 * :o: [ClearLog](signaling/ClearLog.md)
 * [Rate](signaling/Rate.md)
+
+# Geo
+* [GetConfiguration](geo/GetConfiguration.md)
+* [GetRegisterStatus](geo/GetRegisterStatus.md)
+* :o: [Register](geo/Register.md)
+* [UpdatePosition](geo/UpdatePosition.md)
+* [GetComment](geo/GetComment.md)
+* :o: [UpdateComment](geo/UpdateComment.md)
+* [GetNearbyDistance](geo/GetNearbyDistance.md)
+* [GetNearbyCoordinate](geo/GetNearbyCoordinate.md)

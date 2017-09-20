@@ -1,0 +1,25 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoGeoGetNearbyCoordinate";
+
+message GeoGetNearbyCoordinate {
+    Request request = 1;
+    double lat = 2;
+    double lon = 3;
+}
+
+message GeoGetNearbyCoordinateResponse {
+    Response response = 1;
+
+    message Result {
+        uint64 user_id = 1;
+        bool has_comment = 2;
+        double lat = 3;
+        double lon = 4;
+    }
+    repeated Result result = 2;
+}

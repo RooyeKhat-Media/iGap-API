@@ -84,6 +84,7 @@ message RoomMessageLog {
         MISSED_VOICE_CALL = 10;
         MISSED_VIDEO_CALL = 11;
         MISSED_SCREEN_SHARE = 12;
+        MISSED_SECRET_CHAT = 13;
     }
     Type type = 1;
 
@@ -349,6 +350,7 @@ enum PrivacyType {
     VOICE_CALLING = 4;
     VIDEO_CALLING = 5;
     SCREEN_SHARING = 6;
+    SECRET_CHAT = 7;
 }
 
 

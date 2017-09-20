@@ -17,6 +17,8 @@ message ClientGetRoomHistory {
         DOWN = 1;
     }
     Direction direction = 4;
+
+    uint32 limit = 5;
 }
 
 message ClientGetRoomHistoryResponse {

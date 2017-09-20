@@ -14,6 +14,7 @@ message SignalingOffer {
         VOICE_CALLING = 0;
         VIDEO_CALLING = 1;
         SCREEN_SHARING = 2;
+        SECRET_CHAT = 3;
     }
     Type type = 3;
 

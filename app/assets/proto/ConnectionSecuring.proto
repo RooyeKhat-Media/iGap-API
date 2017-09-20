@@ -12,6 +12,7 @@ message ConnectionSecuringResponse {
     uint32 symmetric_key_length = 3;
     uint32 heartbeat_interval = 4;
     string primary_node_name = 5;
+    uint32 secondary_chunk_size = 6;
 }
 
 message ConnectionSymmetricKey {

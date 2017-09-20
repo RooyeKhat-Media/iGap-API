@@ -1,0 +1,24 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoGeoGetNearbyDistance";
+
+message GeoGetNearbyDistance {
+    Request request = 1;
+    double lat = 2;
+    double lon = 3;
+}
+
+message GeoGetNearbyDistanceResponse {
+    Response response = 1;
+
+    message Result {
+        uint64 user_id = 1;
+        bool has_comment = 2;
+        uint32 distance = 3;
+    }
+    repeated Result result = 2;
+}

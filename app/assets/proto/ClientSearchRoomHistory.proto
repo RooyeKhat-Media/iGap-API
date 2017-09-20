@@ -10,7 +10,7 @@ option java_outer_classname = "ProtoClientSearchRoomHistory";
 message ClientSearchRoomHistory {
     Request request = 1;
     uint64 room_id = 2;
-    uint32 offset = 3;
+    uint32 offset = 3; //Deprecated
 
     enum Filter {
         IMAGE = 0;
@@ -22,6 +22,8 @@ message ClientSearchRoomHistory {
         URL = 6;
     }
     Filter filter = 4;
+
+    uint64 offset_message_id = 5;
 }
 
 message ClientSearchRoomHistoryResponse {

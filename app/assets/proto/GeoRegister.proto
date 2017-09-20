@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoGeoRegister";
+
+message GeoRegister {
+    Request request = 1;
+    bool enable = 2;
+}
+
+message GeoRegisterResponse {
+    Response response = 1;
+    bool enable = 2;
+}

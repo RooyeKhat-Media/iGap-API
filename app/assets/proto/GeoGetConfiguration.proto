@@ -1,0 +1,22 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoGeoGetConfiguration";
+
+message GeoGetConfiguration {
+    Request request = 1;
+}
+
+message GeoGetConfigurationResponse {
+    Response response = 1;
+
+    message TileServer {
+        string base_url = 1;
+    }
+    repeated TileServer tile_server = 2;
+
+    string cache_id = 3;
+}

@@ -357,6 +357,27 @@
 | <a name="action_909">909</a> 	    | [Details](SignalingRate.md)                       | [SignalingRate](../../../../app/assets/proto/SignalingRate.proto)                                     |
 | <a name="action_30909">30909</a> 	| [Details](SignalingRateResponse.md)               | [SignalingRateResponse](../../../../app/assets/proto/SignalingRate.proto)                             |
 
+# Geo 10xx , 310xx
+
+| Id 	                            |Details                                            | Proto file                	                                                                        |
+|----	                            |-----------------------------------                |-------------------------------------------------------------------                                    |
+| <a name="action_1000">1000</a> 	| [Details](GeoGetRegisterStatus.md)                | [GeoGetRegisterStatus](../../../../app/assets/proto/GeoGetRegisterStatus.proto)                       |
+| <a name="action_31000">31000</a> 	| [Details](GeoGetRegisterStatusResponse.md)        | [GeoGetRegisterStatusResponse](../../../../app/assets/proto/GeoGetRegisterStatus.proto)               |
+| <a name="action_1001">1001</a> 	| [Details](GeoRegister.md)                         | [GeoRegister](../../../../app/assets/proto/GeoRegister.proto)                                         |
+| <a name="action_31001">31001</a> 	| [Details](GeoRegisterResponse.md)                 | [GeoRegisterResponse](../../../../app/assets/proto/GeoRegister.proto)                                 |
+| <a name="action_1002">1002</a> 	| [Details](GeoUpdatePosition.md)                   | [GeoUpdatePosition](../../../../app/assets/proto/GeoUpdatePosition.proto)                             |
+| <a name="action_31002">31002</a> 	| [Details](GeoUpdatePositionResponse.md)           | [GeoUpdatePositionResponse](../../../../app/assets/proto/GeoUpdatePosition.proto)                     |
+| <a name="action_1003">1003</a> 	| [Details](GeoGetComment.md)                       | [GeoGetComment](../../../../app/assets/proto/GeoGetComment.proto)                                     |
+| <a name="action_31003">31003</a> 	| [Details](GeoGetCommentResponse.md)               | [GeoGetCommentResponse](../../../../app/assets/proto/GeoGetComment.proto)                             |
+| <a name="action_1004">1004</a> 	| [Details](GeoUpdateComment.md)                    | [GeoUpdateComment](../../../../app/assets/proto/GeoUpdateComment.proto)                               |
+| <a name="action_31004">31004</a> 	| [Details](GeoUpdateCommentResponse.md)            | [GeoUpdateCommentResponse](../../../../app/assets/proto/GeoUpdateComment.proto)                       |
+| <a name="action_1005">1005</a> 	| [Details](GeoGetNearbyDistance.md)                | [GeoGetNearbyDistance](../../../../app/assets/proto/GeoGetNearbyDistance.proto)                       |
+| <a name="action_31005">31005</a> 	| [Details](GeoGetNearbyDistanceResponse.md)        | [GeoGetNearbyDistanceResponse](../../../../app/assets/proto/GeoGetNearbyDistance.proto)               |
+| <a name="action_1006">1006</a> 	| [Details](GeoGetNearbyCoordinate.md)              | [GeoGetNearbyCoordinate](../../../../app/assets/proto/GeoGetNearbyCoordinate.proto)                   |
+| <a name="action_31006">31006</a> 	| [Details](GeoGetNearbyCoordinateResponse.md)      | [GeoGetNearbyCoordinateResponse](../../../../app/assets/proto/GeoGetNearbyCoordinate.proto)           |
+| <a name="action_1007">1007</a> 	| [Details](GeoGetConfiguration.md)                 | [GeoGetConfiguration](../../../../app/assets/proto/GeoGetConfiguration.proto)                         |
+| <a name="action_31007">31007</a> 	| [Details](GeoGetConfigurationResponse.md)         | [GeoGetConfigurationResponse](../../../../app/assets/proto/GeoGetConfiguration.proto)                 |
+
 # Push 600xx
 
 | Id 	                            |Details                                            | Proto file                	                                                                        |

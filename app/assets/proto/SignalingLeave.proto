@@ -21,6 +21,7 @@ message SignalingLeaveResponse {
         UNAVAILABLE = 4;
         DISCONNECTED = 5;
         FINISHED = 6;
+        TOO_LONG = 7;
     }
     Type type = 2;
 }
