@@ -30,4 +30,5 @@ message UserLoginResponse {
     bool deprecated_client = 2;
     string secondary_node_name = 3;
     bool update_available = 4;
+    uint32 chat_delete_message_for_both_period = 5;
 }

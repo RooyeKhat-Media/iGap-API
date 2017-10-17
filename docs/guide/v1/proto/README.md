@@ -110,6 +110,12 @@
 | <a name="action_30144">30144</a> 	| [Details](UserPrivacySetRuleResponse.md)                                          | [UserPrivacySetRuleResponse](../../../../app/assets/proto/UserPrivacySetRule.proto)                                                               | 
 | <a name="action_145">145</a> 	    | [Details](UserVerifyNewDevice.md)                                                 | [UserVerifyNewDevice](../../../../app/assets/proto/UserVerifyNewDevice.proto)                                                                     | 
 | <a name="action_30145">30145</a> 	| [Details](UserVerifyNewDeviceResponse.md)                                         | [UserVerifyNewDeviceResponse](../../../../app/assets/proto/UserVerifyNewDevice.proto)                                                             | 
+| <a name="action_147">147</a> 	    | [Details](UserProfileSetBio.md)                                                   | [UserProfileSetBio](../../../../app/assets/proto/UserProfileSetBio.proto)                                                                         | 
+| <a name="action_30147">30147</a> 	| [Details](UserProfileSetBioResponse.md)                                           | [UserProfileSetBioResponse](../../../../app/assets/proto/UserProfileSetBio.proto)                                                                 | 
+| <a name="action_148">148</a> 	    | [Details](UserProfileGetBio.md)                                                   | [UserProfileGetBio](../../../../app/assets/proto/UserProfileGetBio.proto)                                                                         | 
+| <a name="action_30148">30148</a> 	| [Details](UserProfileGetBioResponse.md)                                           | [UserProfileGetBioResponse](../../../../app/assets/proto/UserProfileGetBio.proto)                                                                 | 
+| <a name="action_149">149</a> 	    | [Details](UserReport.md)                                                          | [UserReport](../../../../app/assets/proto/UserReport.proto)                                                                                       | 
+| <a name="action_30149">30149</a> 	| [Details](UserReportResponse.md)                                                  | [UserReportResponse](../../../../app/assets/proto/UserReport.proto)                                                                               | 
 
 # Chat 2xx , 302xx
 
@@ -299,6 +305,12 @@
 | <a name="action_30612">30612</a> 	| [Details](ClientSearchUsernameResponse.md)      | [ClientSearchUsernameResponse](../../../../app/assets/proto/ClientSearchUsername.proto)                     |
 | <a name="action_613">613</a> 	    | [Details](ClientCountRoomHistory.md)            | [ClientCountRoomHistory](../../../../app/assets/proto/ClientCountRoomHistory.proto)               	        |
 | <a name="action_30613">30613</a> 	| [Details](ClientCountRoomHistoryResponse.md)    | [ClientCountRoomHistoryResponse](../../../../app/assets/proto/ClientCountRoomHistory.proto)                 |
+| <a name="action_614">614</a> 	    | [Details](ClientMuteRoom.md)                    | [ClientMuteRoom](../../../../app/assets/proto/ClientMuteRoom.proto)               	                        |
+| <a name="action_30614">30614</a> 	| [Details](ClientMuteRoomResponse.md)            | [ClientMuteRoomResponse](../../../../app/assets/proto/ClientMuteRoom.proto)                                 |
+| <a name="action_615">615</a> 	    | [Details](ClientPinRoom.md)                     | [ClientPinRoom](../../../../app/assets/proto/ClientPinRoom.proto)               	                        |
+| <a name="action_30615">30615</a> 	| [Details](ClientPinRoomResponse.md)             | [ClientPinRoomResponse](../../../../app/assets/proto/ClientPinRoom.proto)                                   |
+| <a name="action_616">616</a> 	    | [Details](ClientRoomReport.md)                  | [ClientRoomReport](../../../../app/assets/proto/ClientRoomReport.proto)               	                    |
+| <a name="action_30616">30616</a> 	| [Details](ClientRoomReportResponse.md)          | [ClientRoomReportResponse](../../../../app/assets/proto/ClientRoomReport.proto)                             |
 
 # File 7xx , 307xx
 

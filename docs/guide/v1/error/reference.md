@@ -307,6 +307,23 @@
 * 10152 - [USER_VERIFY_NEW_DEVICE_INVALID_TOKEN](README.md#error-10152-user_verify_new_device_invalid_token)
 * 10153 - [USER_VERIFY_NEW_DEVICE_EXPIRED_TOKEN](README.md#error-10153-user_verify_new_device_expired_token)
 
+---
+
+* 10161 - [USER_PROFILE_SET_BIO_BAD_PAYLOAD](README.md#error-10161-user_profile_set_bio_bad_payload)
+* 10162 - [USER_PROFILE_SET_BIO_INTERNAL_SERVER_ERROR](README.md#error-10162-user_profile_set_bio_internal_server_error)
+
+---
+
+* 10163 - [USER_PROFILE_GET_BIO_BAD_PAYLOAD](README.md#error-10163-user_profile_get_bio_bad_payload)
+* 10164 - [USER_PROFILE_GET_BIO_INTERNAL_SERVER_ERROR](README.md#error-10164-user_profile_get_bio_internal_server_error)
+
+---
+
+* 10165 - [USER_REPORT_BAD_PAYLOAD](README.md#error-10165-user_report_bad_payload)
+* 10166 - [USER_REPORT_INTERNAL_SERVER_ERROR](README.md#error-10166-user_report_internal_server_error)
+* 10167 - [USER_REPORT_REPORTED_BEFORE](README.md#error-10167-user_report_reported_before)
+* 10168 - [USER_REPORT_FORBIDDEN](README.md#error-10168-user_report_forbidden)
+
 # Chat room errors 2xx
 
 * 200 - [CHAT_GET_ROOM_BAD_PAYLOAD](README.md#error-200-chat_get_room_bad_payload)
@@ -811,6 +828,25 @@
 * 648 - [CLIENT_COUNT_ROOM_HISTORY_INTERNAL_SERVER_ERROR](README.md#error-648-client_count_room_history_internal_server_error)
 * 649 - [CLIENT_COUNT_ROOM_HISTORY_NOT_FOUND](README.md#error-649-client_count_room_history_not_found)
 
+---
+
+* 650 - [CLIENT_MUTE_ROOM_BAD_PAYLOAD](README.md#error-650-client_mute_room_bad_payload)
+* 651 - [CLIENT_MUTE_ROOM_INTERNAL_SERVER_ERROR](README.md#error-651-client_mute_room_internal_server_error)
+* 652 - [CLIENT_MUTE_ROOM_FORBIDDEN](README.md#error-652-client_mute_room_forbidden)
+
+---
+
+* 653 - [CLIENT_PIN_ROOM_BAD_PAYLOAD](README.md#error-653-client_pin_room_bad_payload)
+* 654 - [CLIENT_PIN_ROOM_INTERNAL_SERVER_ERROR](README.md#error-654-client_pin_room_internal_server_error)
+* 655 - [CLIENT_PIN_ROOM_FORBIDDEN](README.md#error-655-client_pin_room_forbidden)
+
+---
+
+* 656 - [CLIENT_ROOM_REPORT_BAD_PAYLOAD](README.md#error-656-client_room_report_bad_payload)
+* 657 - [CLIENT_ROOM_REPORT_INTERNAL_SERVER_ERROR](README.md#error-657-client_room_report_internal_server_error)
+* 658 - [CLIENT_ROOM_REPORT_REPORTED_BEFORE](README.md#error-658-client_room_report_reported_before)
+* 659 - [CLIENT_ROOM_REPORT_FORBIDDEN](README.md#error-659-client_room_report_forbidden)
+
 # File errors 7xx
 
 * 700 - [FILE_UPLOAD_OPTION_BAD_PAYLOAD](README.md#error-700-file_upload_option_bad_payload)
@@ -968,6 +1004,7 @@
 * 1016 - [GEO_GET_NEARBY_COORDINATE_BAD_PAYLOAD](README.md#error-1016-geo_get_nearby_coordinate_bad_payload)
 * 1017 - [GEO_GET_NEARBY_COORDINATE_INTERNAL_SERVER_ERROR](README.md#error-1017-geo_get_nearby_coordinate_internal_server_error)
 * 1018 - [GEO_GET_NEARBY_COORDINATE_FORBIDDEN](README.md#error-1018-geo_get_nearby_coordinate_forbidden)
+
 ---
 
 * 1019 - [GEO_GET_CONFIGURATION_BAD_PAYLOAD](README.md#error-1019-geo_get_configuration_bad_payload)

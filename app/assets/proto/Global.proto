@@ -139,6 +139,7 @@ message RegisteredUser {
     bool mutual = 13;
     bool deleted = 14;
     string cache_id = 15;
+    string bio = 16;
 }
 
 enum ClientAction {
@@ -223,6 +224,11 @@ message RoomDraft {
     uint64 reply_to = 2;
 }
 
+enum RoomMute {
+    UNMUTE = 0;
+    MUTE = 1;
+}
+
 message Room {
     uint64 id = 1;
     enum Type {
@@ -240,6 +246,8 @@ message Room {
     bool is_participant = 9;
     RoomDraft draft = 10;
     RoomMessage first_unread_message = 14;
+    RoomMute room_mute = 15;
+    uint64 pin_id = 16;
 
     ChatRoom chat_room_extra = 11;
     GroupRoom group_room_extra = 12;
@@ -326,6 +334,8 @@ message Thumbnail {
     int32 width = 2;
     int32 height = 3;
     string cache_id = 4;
+    string name = 5;
+    string mime = 6;
 }
 
 message File {
@@ -339,6 +349,7 @@ message File {
     int32 height = 8;
     double duration = 9;
     string cache_id = 10;
+    string mime = 11;
 }
 
 

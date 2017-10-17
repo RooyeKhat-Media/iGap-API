@@ -1,0 +1,16 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserProfileGetBio";
+
+message UserProfileGetBio {
+    Request request = 1;
+}
+
+message UserProfileGetBioResponse {
+    Response response = 1;
+    string bio = 2;
+}

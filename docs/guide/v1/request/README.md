@@ -22,6 +22,9 @@
     * [GetSelfRemove](user/profile/GetSelfRemove.md)
     * [CheckUsername](user/profile/CheckUsername.md)
     * :o: [UpdateUsername](user/profile/UpdateUsername.md)
+    * :o: [SetBio](user/profile/SetBio.md)
+    * [GetBio](user/profile/GetBio.md)
+    * [Report](user/Report.md)
 * Contacts
     * [Import](user/contacts/Import.md)
     * :o: [GetList](user/contacts/GetList.md)
@@ -150,6 +153,9 @@
 * [UnsubscribeFromRoom](client/UnsubscribeFromRoom.md)
 * [SearchUsername](client/SearchUsername.md)
 * [CountRoomHistory](client/CountRoomHistory.md)
+* :o: [MuteRoom](client/MuteRoom.md)
+* :o: [PinRoom](client/PinRoom.md)
+* [RoomReport](client/RoomReport.md)
 
 # File
 * [Upload](file/Upload.md)

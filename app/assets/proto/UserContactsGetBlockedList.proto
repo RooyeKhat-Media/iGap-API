@@ -15,6 +15,7 @@ message UserContactsGetBlockedListResponse {
 
     message User {
         uint64 user_id = 1;
+        string cache_id = 2;
     }
     repeated User user = 2;
 }

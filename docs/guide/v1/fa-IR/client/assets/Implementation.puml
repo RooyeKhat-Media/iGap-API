@@ -1,0 +1,22 @@
+@startuml
+
+class RequestWrapper
+Abstract class MessageHandler
+
+class RequestWrapper {
+ # int actionId
+ # proto message
+ # string identity = null
+ + time
+}
+
+class MessageHandler {
+ # int actionId
+ # proto message
+ # string identity
+ + Abstract handle()
+ + Abstract error()
+ + timeout()
+}
+
+@enduml

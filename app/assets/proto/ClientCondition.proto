@@ -14,7 +14,7 @@ message ClientCondition {
         uint64 message_version = 3;
         uint64 status_version = 4;
         uint64 delete_version = 5;
-        repeated uint64 offline_deleted = 6;
+        repeated uint64 offline_deleted_deprecated = 6; //DEPRECATED
 
         message OfflineEdited {
             uint64 message_id = 1;
@@ -35,6 +35,12 @@ message ClientCondition {
         OfflineMute offline_mute = 12;
 
         repeated uint64 offline_listened = 13;
+
+        message OfflineDeleted {
+            uint64 message_id = 1;
+            bool both = 4;
+        }
+        repeated OfflineDeleted offline_deleted = 14;
     }
     repeated Room rooms = 2;
 }

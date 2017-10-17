@@ -1,0 +1,26 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserReport";
+
+message UserReport {
+    Request request = 1;
+    uint64 user_id = 2;
+
+    enum Reason {
+        OTHER = 0;
+        SPAM = 1;
+        ABUSE = 2;
+        FAKE_ACCOUNT = 3;
+    }
+    Reason reason = 3;
+
+    string description = 4;
+}
+
+message UserReportResponse {
+    Response response = 1;
+}

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg xmlns="http://www.w3.org/2000/svg" height="148px" style="width:303px;height:148px;" version="1.1"
+     viewBox="0 0 303 148" width="303px">
+    <defs>
+        <filter height="300%" id="f1" width="300%" x="-1" y="-1">
+            <feGaussianBlur result="blurOut" stdDeviation="2.0"/>
+            <feColorMatrix in="blurOut" result="blurOut2" type="matrix"
+                           values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/>
+            <feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/>
+            <feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/>
+        </filter>
+    </defs>
+    <g>
+        <rect fill="#FEFECE" filter="url(#f1)" height="103.3438" style="stroke: #A80036; stroke-width: 1.5;" width="126"
+              x="6" y="22"/>
+        <ellipse cx="21" cy="38" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M23.7656,33.875 Q23.9219,33.6563 24.1094,33.5469 Q24.2969,33.4375 24.5156,33.4375 Q24.8906,33.4375 25.125,33.6953 Q25.3594,33.9531 25.3594,34.5625 L25.3594,36.0156 Q25.3594,36.625 25.125,36.8906 Q24.8906,37.1563 24.5156,37.1563 Q24.1719,37.1563 23.9688,36.9531 Q23.7656,36.7656 23.6563,36.25 Q23.6094,35.8906 23.4219,35.7031 Q23.0938,35.3281 22.4844,35.1094 Q21.875,34.8906 21.25,34.8906 Q20.4844,34.8906 19.8516,35.2188 Q19.2188,35.5469 18.7266,36.2969 Q18.2344,37.0469 18.2344,38.0781 L18.2344,39.1719 Q18.2344,40.4063 19.125,41.2266 Q20.0156,42.0469 21.6094,42.0469 Q22.5469,42.0469 23.2031,41.7969 Q23.5938,41.6406 24.0156,41.2031 Q24.2813,40.9375 24.4297,40.8594 Q24.5781,40.7813 24.7813,40.7813 Q25.1094,40.7813 25.3672,41.0391 Q25.625,41.2969 25.625,41.6406 Q25.625,41.9844 25.2813,42.3906 Q24.7813,42.9688 23.9844,43.2969 Q22.9063,43.75 21.6094,43.75 Q20.0938,43.75 18.8906,43.125 Q17.9063,42.625 17.2188,41.5547 Q16.5313,40.4844 16.5313,39.2031 L16.5313,38.0469 Q16.5313,36.7188 17.1484,35.5703 Q17.7656,34.4219 18.8594,33.8047 Q19.9531,33.1875 21.1875,33.1875 Q21.9219,33.1875 22.5703,33.3516 Q23.2188,33.5156 23.7656,33.875 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="94"
+              x="35" y="42.9102">RequestWrapper
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="131" y1="54" y2="54"/>
+        <polygon fill="none" points="17,61.418,21,65.418,17,69.418,13,65.418"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51"
+              x="26" y="69.4189">int actionId
+        </text>
+        <polygon fill="none" points="17,75.2539,21,79.2539,17,83.2539,13,79.2539"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72"
+              x="26" y="83.2549">proto message
+        </text>
+        <polygon fill="none" points="17,89.0898,21,93.0898,17,97.0898,13,93.0898"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="92"
+              x="26" y="97.0908">string identity = null
+        </text>
+        <ellipse cx="17" cy="107.9258" fill="none" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="19"
+              x="26" y="110.9268">time
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="7" x2="131" y1="117.3438" y2="117.3438"/>
+        <rect fill="#FEFECE" filter="url(#f1)" height="131.0156" style="stroke: #A80036; stroke-width: 1.5;" width="127"
+              x="167.5" y="8"/>
+        <ellipse cx="182.5" cy="24" fill="#ADD1B2" rx="11" ry="11" style="stroke: #A80036; stroke-width: 1.0;"/>
+        <path d="M185.2656,19.875 Q185.4219,19.6563 185.6094,19.5469 Q185.7969,19.4375 186.0156,19.4375 Q186.3906,19.4375 186.625,19.6953 Q186.8594,19.9531 186.8594,20.5625 L186.8594,22.0156 Q186.8594,22.625 186.625,22.8906 Q186.3906,23.1563 186.0156,23.1563 Q185.6719,23.1563 185.4688,22.9531 Q185.2656,22.7656 185.1563,22.25 Q185.1094,21.8906 184.9219,21.7031 Q184.5938,21.3281 183.9844,21.1094 Q183.375,20.8906 182.75,20.8906 Q181.9844,20.8906 181.3516,21.2188 Q180.7188,21.5469 180.2266,22.2969 Q179.7344,23.0469 179.7344,24.0781 L179.7344,25.1719 Q179.7344,26.4063 180.625,27.2266 Q181.5156,28.0469 183.1094,28.0469 Q184.0469,28.0469 184.7031,27.7969 Q185.0938,27.6406 185.5156,27.2031 Q185.7813,26.9375 185.9297,26.8594 Q186.0781,26.7813 186.2813,26.7813 Q186.6094,26.7813 186.8672,27.0391 Q187.125,27.2969 187.125,27.6406 Q187.125,27.9844 186.7813,28.3906 Q186.2813,28.9688 185.4844,29.2969 Q184.4063,29.75 183.1094,29.75 Q181.5938,29.75 180.3906,29.125 Q179.4063,28.625 178.7188,27.5547 Q178.0313,26.4844 178.0313,25.2031 L178.0313,24.0469 Q178.0313,22.7188 178.6484,21.5703 Q179.2656,20.4219 180.3594,19.8047 Q181.4531,19.1875 182.6875,19.1875 Q183.4219,19.1875 184.0703,19.3516 Q184.7188,19.5156 185.2656,19.875 Z "/>
+        <text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacingAndGlyphs" textLength="95"
+              x="196.5" y="28.9102">MessageHandler
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="168.5" x2="293.5" y1="40" y2="40"/>
+        <polygon fill="none" points="178.5,47.418,182.5,51.418,178.5,55.418,174.5,51.418"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="51"
+              x="187.5" y="55.4189">int actionId
+        </text>
+        <polygon fill="none" points="178.5,61.2539,182.5,65.2539,178.5,69.2539,174.5,65.2539"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="72"
+              x="187.5" y="69.2549">proto message
+        </text>
+        <polygon fill="none" points="178.5,75.0898,182.5,79.0898,178.5,83.0898,174.5,79.0898"
+                 style="stroke: #B38D22; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="64"
+              x="187.5" y="83.0908">string identity
+        </text>
+        <line style="stroke: #A80036; stroke-width: 1.5;" x1="168.5" x2="293.5" y1="89.5078" y2="89.5078"/>
+        <ellipse cx="178.5" cy="101.9258" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="85"
+              x="187.5" y="104.9268">Abstract handle()
+        </text>
+        <ellipse cx="178.5" cy="115.7617" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="77"
+              x="187.5" y="118.7627">Abstract error()
+        </text>
+        <ellipse cx="178.5" cy="129.5977" fill="#84BE84" rx="3" ry="3" style="stroke: #038048; stroke-width: 1.0;"/>
+        <text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacingAndGlyphs" textLength="42"
+              x="187.5" y="132.5986">timeout()
+        </text>
+    </g>
+</svg>

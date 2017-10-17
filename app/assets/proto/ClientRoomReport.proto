@@ -1,0 +1,28 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientRoomReport";
+
+message ClientRoomReport {
+    Request request = 1;
+    uint64 room_id = 2;
+    uint64 message_id = 3;
+
+    enum Reason {
+        OTHER = 0;
+        SPAM = 1;
+        PORNOGRAPHY = 2;
+        VIOLENCE = 3;
+        ABUSE = 4;
+    }
+    Reason reason = 4;
+
+    string description = 5;
+}
+
+message ClientRoomReportResponse {
+    Response response = 1;
+}
