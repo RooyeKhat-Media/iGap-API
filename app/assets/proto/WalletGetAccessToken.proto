@@ -1,0 +1,23 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoWalletGetAccessToken";
+
+message WalletGetAccessToken {
+    Request request = 1;
+}
+
+message WalletGetAccessTokenResponse {
+    Response response = 1;
+
+    enum TokenType {
+        BEARER = 0;
+    }
+    TokenType token_type = 2;
+
+    string access_token = 3;
+    uint32 expires_in = 4;
+}

@@ -1,0 +1,15 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoWalletRegister";
+
+message WalletRegister {
+    Request request = 1;
+}
+
+message WalletRegisterResponse {
+    Response response = 1;
+}

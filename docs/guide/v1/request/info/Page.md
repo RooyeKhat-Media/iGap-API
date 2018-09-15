@@ -7,6 +7,7 @@ message [#503](../../proto/README.md#action_503)
 message [#30503](../../proto/README.md#action_30503)
 
 # Available pages
-| ID  	| Description      	|
-|-----	|------------------	|
-| TOS 	| Terms of service 	|
+| ID  	            | Description      	        |
+|-----	            |------------------	        |
+| TOS 	            | Terms of service 	        |
+| WALLET_AGREEMENT 	| Wallet service agreement 	|

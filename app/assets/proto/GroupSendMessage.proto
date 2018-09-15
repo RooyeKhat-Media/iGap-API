@@ -17,6 +17,7 @@ message GroupSendMessage {
     RoomMessageContact contact = 7;
     uint64 reply_to = 8;
     RoomMessageForwardFrom forward_from = 9;
+    uint64 random_id = 10;
 }
 
 message GroupSendMessageResponse {

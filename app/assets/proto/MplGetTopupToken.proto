@@ -1,0 +1,31 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoMplGetTopupToken";
+
+message MplGetTopupToken {
+    Request request = 1;
+    uint64 charge_mobile_number = 2;
+    uint64 amount = 3;
+
+    enum Type {
+        IRANCELL_PREPAID = 0;
+        IRANCELL_WOW = 1;
+        IRANCELL_WIMAX = 2;
+        IRANCELL_POSTPAID = 3;
+        MCI = 4;
+        RIGHTEL = 5;
+    }
+    Type type = 4;
+}
+
+message MplGetTopupTokenResponse {
+    Response response = 1;
+    uint32 status = 2;
+    string token = 3;
+    uint32 expire_time = 4;
+    string message = 5;
+}

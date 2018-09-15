@@ -1,0 +1,11 @@
+syntax = "proto3";
+package proto;
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoPushWalletPaymentVerified";
+
+message PushWalletPaymentVerifiedResponse {
+    Response response = 1;
+    string token = 2;
+}

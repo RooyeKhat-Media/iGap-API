@@ -31,4 +31,7 @@ message UserLoginResponse {
     string secondary_node_name = 3;
     bool update_available = 4;
     uint32 chat_delete_message_for_both_period = 5;
+    bool wallet_active = 6;
+    bool mpl_active = 7;
+    bool wallet_agreement_accepted = 8;
 }

@@ -10,6 +10,13 @@ message UserRegister {
     Request request = 1;
     uint64 phone_number = 2;
     string country_code = 3;
+
+    enum PreferenceMethod {
+        VERIFY_CODE_AUTO = 0;
+        VERIFY_CODE_SMS = 1;
+        VERIFY_CODE_CALL = 2;
+    }
+    PreferenceMethod preference_method = 4;
 }
 
 message UserRegisterResponse {
@@ -22,10 +29,12 @@ message UserRegisterResponse {
         VERIFY_CODE_SMS = 0;
         VERIFY_CODE_SOCKET = 1;
         VERIFY_CODE_SMS_SOCKET = 2;
+        VERIFY_CODE_CALL = 3;
     }
     Method method = 5;
     uint32 resend_delay = 6;
     repeated uint64 sms_number = 7;
     string verify_code_regex = 8;
     uint32 verify_code_digit_count = 9;
+    bool call_method_supported = 10;
 }

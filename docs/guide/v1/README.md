@@ -12,5 +12,6 @@
 * [Methods](request/README.md)
 * [Reverse methods](reverse/README.md)
 * [Push methods](push/README.md)
+* [Push notifications](PushNotifications.md)
 * [iGap protocol](Protocol.md)
 * [Errors](error/README.md) ([Quick reference](error/reference.md))

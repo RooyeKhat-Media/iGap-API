@@ -24,7 +24,7 @@
     * :o: [UpdateUsername](user/profile/UpdateUsername.md)
     * :o: [SetBio](user/profile/SetBio.md)
     * [GetBio](user/profile/GetBio.md)
-    * [Report](user/Report.md)
+* [Report](user/Report.md)
 * Contacts
     * [Import](user/contacts/Import.md)
     * :o: [GetList](user/contacts/GetList.md)
@@ -97,6 +97,7 @@
 * :o: [UpdateUsername](group/UpdateUsername.md)
 * :o: [RemoveUsername](group/RemoveUsername.md)
 * :o: [RevokeLink](group/RevokeLink.md)
+* :o: [PinMessage](group/PinMessage.md)
 * Avatar
     * :o: [Add](group/avatar/Add.md)
     * :o: [Delete](group/avatar/Delete.md)
@@ -124,8 +125,10 @@
 * :o: [RemoveUsername](channel/RemoveUsername.md)
 * :o: [RevokeLink](channel/RevokeLink.md)
 * :o: [UpdateSignature](channel/UpdateSignature.md)
+* :o: [UpdateReactionStatus](channel/UpdateReactionStatus.md)
 * [GetMessagesStats](channel/GetMessagesStats.md)
 * [AddMessageReaction](channel/AddMessageReaction.md)
+* :o: [PinMessage](channel/PinMessage.md)
 * Avatar
     * :o: [Add](channel/avatar/Add.md)
     * :o: [Delete](channel/avatar/Delete.md)
@@ -156,6 +159,7 @@
 * :o: [MuteRoom](client/MuteRoom.md)
 * :o: [PinRoom](client/PinRoom.md)
 * [RoomReport](client/RoomReport.md)
+* [RegisterDevice](client/RegisterDevice.md)
 
 # File
 * [Upload](file/Upload.md)
@@ -193,3 +197,18 @@
 * :o: [UpdateComment](geo/UpdateComment.md)
 * [GetNearbyDistance](geo/GetNearbyDistance.md)
 * [GetNearbyCoordinate](geo/GetNearbyCoordinate.md)
+
+# Wallet
+* [GetAccessToken](wallet/GetAccessToken.md)
+* [Register](wallet/Register.md)
+* [IdMapping](wallet/IdMapping.md)
+* Payment
+    * [Init](wallet/payment/Init.md)
+
+# Mpl
+* [GetBillToken](mpl/GetBillToken.md)
+* [GetTopupToken](mpl/GetTopupToken.md)
+
+# BillInquiry
+* [Mci](bill-inquiry/Mci.md)
+* [Telecom](bill-inquiry/Telecom.md)

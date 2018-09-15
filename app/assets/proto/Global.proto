@@ -48,6 +48,7 @@ enum RoomMessageType {
     LOCATION = 11;
     LOG = 12;
     CONTACT = 13;
+    WALLET = 15;
 }
 
 enum RoomMessageStatus {
@@ -85,6 +86,7 @@ message RoomMessageLog {
         MISSED_VIDEO_CALL = 11;
         MISSED_SCREEN_SHARE = 12;
         MISSED_SECRET_CHAT = 13;
+        PINNED_MESSAGE = 14;
     }
     Type type = 1;
 
@@ -106,6 +108,24 @@ message RoomMessageContact {
     string nickname = 3;
     repeated string phone = 4;
     repeated string email = 5;
+}
+
+message RoomMessageWallet {
+    enum Type {
+        MONEY_TRANSFER = 0;
+    }
+    Type type = 1;
+
+    message MoneyTransfer {
+        uint64 from_user_id = 1;
+        uint64 to_user_id = 2;
+        uint64 amount = 3;
+        int64 trace_number = 4;
+        int64 invoice_number = 5;
+        uint32 pay_time = 6;
+        string description = 7;
+    }
+    MoneyTransfer money_transfer = 2;
 }
 
 message RoomMessageForwardFrom {
@@ -140,6 +160,7 @@ message RegisteredUser {
     bool deleted = 14;
     string cache_id = 15;
     string bio = 16;
+    bool verified = 17;
 }
 
 enum ClientAction {
@@ -193,6 +214,7 @@ message RoomMessage {
     RoomMessageLocation location = 9;
     RoomMessageLog log = 10;
     RoomMessageContact contact = 11;
+    RoomMessageWallet wallet = 22;
     bool edited = 12;
     uint32 create_time = 13;
     uint32 update_time = 14;
@@ -202,6 +224,7 @@ message RoomMessage {
     RoomMessage reply_to = 17;
 
     uint64 previous_message_id = 18;
+    uint64 random_id = 21;
 
     enum ExtraType {
         NO_EXTRA = 0;
@@ -248,6 +271,7 @@ message Room {
     RoomMessage first_unread_message = 14;
     RoomMute room_mute = 15;
     uint64 pin_id = 16;
+    RoomMessage pinned_message = 17;
 
     ChatRoom chat_room_extra = 11;
     GroupRoom group_room_extra = 12;
@@ -327,6 +351,8 @@ message ChannelRoom {
 
     bool signature = 10;
     uint64 seen_id = 11;
+    bool verified = 12;
+    bool reaction_status = 13;
 }
 
 message Thumbnail {
@@ -350,6 +376,7 @@ message File {
     double duration = 9;
     string cache_id = 10;
     string mime = 11;
+    string public_url = 12;
 }
 
 

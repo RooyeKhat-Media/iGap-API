@@ -200,63 +200,69 @@
 | <a name="action_30324">30324</a> 	| [Details](GroupRevokeLinkResponse.md)                     | [GroupRevokeLinkResponse](../../../../app/assets/proto/GroupRevokeLink.proto)                     |
 | <a name="action_325">325</a> 	    | [Details](GroupEditMessage.md)                            | [GroupEditMessage](../../../../app/assets/proto/GroupEditMessage.proto)               	        |
 | <a name="action_30325">30325</a> 	| [Details](GroupEditMessageResponse.md)                    | [GroupEditMessageResponse](../../../../app/assets/proto/GroupEditMessage.proto)                   |
+| <a name="action_326">326</a> 	    | [Details](GroupPinMessage.md)                             | [GroupPinMessage](../../../../app/assets/proto/GroupPinMessage.proto)               	            |
+| <a name="action_30326">30326</a> 	| [Details](GroupPinMessageResponse.md)                     | [GroupPinMessageResponse](../../../../app/assets/proto/GroupPinMessage.proto)                     |
 
 # Channel 4xx , 304xx
 
-| Id 	                            |Details                                                      | Proto file                	                                                                        |
-|----	                            |-----------------------------------                          |-------------------------------------------------------------------                                  |
-| <a name="action_400">400</a> 	    | [Details](ChannelCreate.md)                                 | [ChannelCreate](../../../../app/assets/proto/ChannelCreate.proto)               	                |
-| <a name="action_30400">30400</a> 	| [Details](ChannelCreateResponse.md)                         | [ChannelCreateResponse](../../../../app/assets/proto/ChannelCreate.proto)               	        |
-| <a name="action_401">401</a> 	    | [Details](ChannelAddMember.md)                              | [ChannelAddMember](../../../../app/assets/proto/ChannelAddMember.proto)               	            |
-| <a name="action_30401">30401</a> 	| [Details](ChannelAddMemberResponse.md)                      | [ChannelAddMemberResponse](../../../../app/assets/proto/ChannelAddMember.proto)               	    |
-| <a name="action_402">402</a> 	    | [Details](ChannelAddAdmin.md)                               | [ChannelAddAdmin](../../../../app/assets/proto/ChannelAddAdmin.proto)               	            |
-| <a name="action_30402">30402</a> 	| [Details](ChannelAddAdminResponse.md)                       | [ChannelAddAdminResponse](../../../../app/assets/proto/ChannelAddAdmin.proto)               	    |
-| <a name="action_403">403</a> 	    | [Details](ChannelAddModerator.md)                           | [ChannelAddModerator](../../../../app/assets/proto/ChannelAddModerator.proto)               	    |
-| <a name="action_30403">30403</a> 	| [Details](ChannelAddModeratorResponse.md)                   | [ChannelAddModeratorResponse](../../../../app/assets/proto/ChannelAddModerator.proto)               |
-| <a name="action_404">404</a> 	    | [Details](ChannelDelete.md)                                 | [ChannelDelete](../../../../app/assets/proto/ChannelDelete.proto)               	                |
-| <a name="action_30404">30404</a> 	| [Details](ChannelDeleteResponse.md)                         | [ChannelDeleteResponse](../../../../app/assets/proto/ChannelDelete.proto)                           |
-| <a name="action_405">405</a> 	    | [Details](ChannelEdit.md)                                   | [ChannelEdit](../../../../app/assets/proto/ChannelEdit.proto)               	                    |
-| <a name="action_30405">30405</a> 	| [Details](ChannelEditResponse.md)                           | [ChannelEditResponse](../../../../app/assets/proto/ChannelEdit.proto)               	            |
-| <a name="action_406">406</a> 	    | [Details](ChannelKickAdmin.md)                              | [ChannelKickAdmin](../../../../app/assets/proto/ChannelKickAdmin.proto)               	            |
-| <a name="action_30406">30406</a> 	| [Details](ChannelKickAdminResponse.md)                      | [ChannelKickAdminResponse](../../../../app/assets/proto/ChannelKickAdmin.proto)               	    |
-| <a name="action_407">407</a> 	    | [Details](ChannelKickMember.md)                             | [ChannelKickMember](../../../../app/assets/proto/ChannelKickMember.proto)               	        |
-| <a name="action_30407">30407</a> 	| [Details](ChannelKickMemberResponse.md)                     | [ChannelKickMemberResponse](../../../../app/assets/proto/ChannelKickMember.proto)               	|
-| <a name="action_408">408</a> 	    | [Details](ChannelKickModerator.md)                          | [ChannelKickModerator](../../../../app/assets/proto/ChannelKickModerator.proto)               	    |
-| <a name="action_30408">30408</a> 	| [Details](ChannelKickModeratorResponse.md)                  | [ChannelKickModeratorResponse](../../../../app/assets/proto/ChannelKickModerator.proto)             |
-| <a name="action_409">409</a> 	    | [Details](ChannelLeft.md)                                   | [ChannelLeft](../../../../app/assets/proto/ChannelLeft.proto)               	                    |
-| <a name="action_30409">30409</a> 	| [Details](ChannelLeftResponse.md)                           | [ChannelLeftResponse](../../../../app/assets/proto/ChannelLeft.proto)               	            |
-| <a name="action_410">410</a> 	    | [Details](ChannelSendMessage.md)                            | [ChannelSendMessage](../../../../app/assets/proto/ChannelSendMessage.proto)               	        |
-| <a name="action_30410">30410</a> 	| [Details](ChannelSendMessageResponse.md)                    | [ChannelSendMessageResponse](../../../../app/assets/proto/ChannelSendMessage.proto)               	|
-| <a name="action_411">411</a> 	    | [Details](ChannelDeleteMessage.md)                          | [ChannelDeleteMessage](../../../../app/assets/proto/ChannelDeleteMessage.proto)               	    |
-| <a name="action_30411">30411</a> 	| [Details](ChannelDeleteMessageResponse.md)                  | [ChannelDeleteMessageResponse](../../../../app/assets/proto/ChannelDeleteMessage.proto)             |
-| <a name="action_412">412  </a> 	| [Details](ChannelAvatarAdd.md)                              | [ChannelAvatarAdd](../../../../app/assets/proto/ChannelAvatarAdd.proto)               	            |
-| <a name="action_30412">30412</a> 	| [Details](ChannelAvatarAddResponse.md)                      | [ChannelAvatarAddResponse](../../../../app/assets/proto/ChannelAvatarAdd.proto)                     |
-| <a name="action_413">413</a> 	    | [Details](ChannelAvatarDelete.md)                           | [ChannelAvatarDelete](../../../../app/assets/proto/ChannelAvatarDelete.proto)               	    |
-| <a name="action_30413">30413</a> 	| [Details](ChannelAvatarDeleteResponse.md)                   | [ChannelAvatarDeleteResponse](../../../../app/assets/proto/ChannelAvatarDelete.proto)               |
-| <a name="action_414">414</a> 	    | [Details](ChannelAvatarGetList.md)                          | [ChannelAvatarGetList](../../../../app/assets/proto/ChannelAvatarGetList.proto)               	    |
-| <a name="action_30414">30414</a> 	| [Details](ChannelAvatarGetListResponse.md)                  | [ChannelAvatarGetListResponse](../../../../app/assets/proto/ChannelAvatarGetList.proto)             |
-| <a name="action_415">415</a> 	    | [Details](ChannelUpdateDraft.md)                            | [ChannelUpdateDraft](../../../../app/assets/proto/ChannelUpdateDraft.proto)               	        |
-| <a name="action_30415">30415</a> 	| [Details](ChannelUpdateDraftResponse.md)                    | [ChannelUpdateDraftResponse](../../../../app/assets/proto/ChannelUpdateDraft.proto)                 |
-| <a name="action_416">416</a> 	    | [Details](ChannelGetDraft.md)                               | [ChannelGetDraft](../../../../app/assets/proto/ChannelGetDraft.proto)               	            |
-| <a name="action_30416">30416</a> 	| [Details](ChannelGetDraftResponse.md)                       | [ChannelGetDraftResponse](../../../../app/assets/proto/ChannelGetDraft.proto)                       |
-| <a name="action_417">417</a> 	    | [Details](ChannelGetMemberList.md)                          | [ChannelGetMemberList](../../../../app/assets/proto/ChannelGetMemberList.proto)               	    |
-| <a name="action_30417">30417</a> 	| [Details](ChannelGetMemberListResponse.md)                  | [ChannelGetMemberListResponse](../../../../app/assets/proto/ChannelGetMemberList.proto)             |
-| <a name="action_418">418</a> 	    | [Details](ChannelCheckUsername.md)                          | [ChannelCheckUsername](../../../../app/assets/proto/ChannelCheckUsername.proto)               	    |
-| <a name="action_30418">30418</a> 	| [Details](ChannelCheckUsernameResponse.md)                  | [ChannelCheckUsernameResponse](../../../../app/assets/proto/ChannelCheckUsername.proto)             |
-| <a name="action_419">419</a> 	    | [Details](ChannelUpdateUsername.md)                         | [ChannelUpdateUsername](../../../../app/assets/proto/ChannelUpdateUsername.proto)               	|
-| <a name="action_30419">30419</a> 	| [Details](ChannelUpdateUsernameResponse.md)                 | [ChannelUpdateUsernameResponse](../../../../app/assets/proto/ChannelUpdateUsername.proto)           |
-| <a name="action_420">420</a> 	    | [Details](ChannelRemoveUsername.md)                         | [ChannelRemoveUsername](../../../../app/assets/proto/ChannelRemoveUsername.proto)               	|
-| <a name="action_30420">30420</a> 	| [Details](ChannelRemoveUsernameResponse.md)                 | [ChannelRemoveUsernameResponse](../../../../app/assets/proto/ChannelRemoveUsername.proto)           |
-| <a name="action_421">421</a> 	    | [Details](ChannelRevokeLink.md)                             | [ChannelRevokeLink](../../../../app/assets/proto/ChannelRevokeLink.proto)               	        |
-| <a name="action_30421">30421</a> 	| [Details](ChannelRevokeLinkResponse.md)                     | [ChannelRevokeLinkResponse](../../../../app/assets/proto/ChannelRevokeLink.proto)                   |
-| <a name="action_422">422</a> 	    | [Details](ChannelUpdateSignature.md)                        | [ChannelUpdateSignature](../../../../app/assets/proto/ChannelUpdateSignature.proto)               	|
-| <a name="action_30422">30422</a> 	| [Details](ChannelUpdateSignatureResponse.md)                | [ChannelUpdateSignatureResponse](../../../../app/assets/proto/ChannelUpdateSignature.proto)         |
-| <a name="action_423">423</a> 	    | [Details](ChannelGetMessagesStats.md)                       | [ChannelGetMessagesStats](../../../../app/assets/proto/ChannelGetMessagesStats.proto)               |
-| <a name="action_30423">30423</a> 	| [Details](ChannelGetMessagesStatsResponse.md)               | [ChannelGetMessagesStatsResponse](../../../../app/assets/proto/ChannelGetMessagesStats.proto)       |
-| <a name="action_424">424</a> 	    | [Details](ChannelAddMessageReaction.md)                     | [ChannelAddMessageReaction](../../../../app/assets/proto/ChannelAddMessageReaction.proto)           |
-| <a name="action_30424">30424</a> 	| [Details](ChannelAddMessageReactionResponse.md)             | [ChannelAddMessageReactionResponse](../../../../app/assets/proto/ChannelAddMessageReaction.proto)   |
-| <a name="action_425">425</a> 	    | [Details](ChannelEditMessage.md)                            | [ChannelEditMessage](../../../../app/assets/proto/ChannelEditMessage.proto)               	        |
-| <a name="action_30425">30425</a> 	| [Details](ChannelEditMessageResponse.md)                    | [ChannelEditMessageResponse](../../../../app/assets/proto/ChannelEditMessage.proto)                 |
+| Id 	                            |Details                                                      | Proto file                	                                                                            |
+|----	                            |-----------------------------------                          |-------------------------------------------------------------------                                      |
+| <a name="action_400">400</a> 	    | [Details](ChannelCreate.md)                                 | [ChannelCreate](../../../../app/assets/proto/ChannelCreate.proto)               	                    |
+| <a name="action_30400">30400</a> 	| [Details](ChannelCreateResponse.md)                         | [ChannelCreateResponse](../../../../app/assets/proto/ChannelCreate.proto)               	            |
+| <a name="action_401">401</a> 	    | [Details](ChannelAddMember.md)                              | [ChannelAddMember](../../../../app/assets/proto/ChannelAddMember.proto)               	                |
+| <a name="action_30401">30401</a> 	| [Details](ChannelAddMemberResponse.md)                      | [ChannelAddMemberResponse](../../../../app/assets/proto/ChannelAddMember.proto)               	        |
+| <a name="action_402">402</a> 	    | [Details](ChannelAddAdmin.md)                               | [ChannelAddAdmin](../../../../app/assets/proto/ChannelAddAdmin.proto)               	                |
+| <a name="action_30402">30402</a> 	| [Details](ChannelAddAdminResponse.md)                       | [ChannelAddAdminResponse](../../../../app/assets/proto/ChannelAddAdmin.proto)               	        |
+| <a name="action_403">403</a> 	    | [Details](ChannelAddModerator.md)                           | [ChannelAddModerator](../../../../app/assets/proto/ChannelAddModerator.proto)               	        |
+| <a name="action_30403">30403</a> 	| [Details](ChannelAddModeratorResponse.md)                   | [ChannelAddModeratorResponse](../../../../app/assets/proto/ChannelAddModerator.proto)                   |
+| <a name="action_404">404</a> 	    | [Details](ChannelDelete.md)                                 | [ChannelDelete](../../../../app/assets/proto/ChannelDelete.proto)               	                    |
+| <a name="action_30404">30404</a> 	| [Details](ChannelDeleteResponse.md)                         | [ChannelDeleteResponse](../../../../app/assets/proto/ChannelDelete.proto)                               |
+| <a name="action_405">405</a> 	    | [Details](ChannelEdit.md)                                   | [ChannelEdit](../../../../app/assets/proto/ChannelEdit.proto)               	                        |
+| <a name="action_30405">30405</a> 	| [Details](ChannelEditResponse.md)                           | [ChannelEditResponse](../../../../app/assets/proto/ChannelEdit.proto)               	                |
+| <a name="action_406">406</a> 	    | [Details](ChannelKickAdmin.md)                              | [ChannelKickAdmin](../../../../app/assets/proto/ChannelKickAdmin.proto)               	                |
+| <a name="action_30406">30406</a> 	| [Details](ChannelKickAdminResponse.md)                      | [ChannelKickAdminResponse](../../../../app/assets/proto/ChannelKickAdmin.proto)               	        |
+| <a name="action_407">407</a> 	    | [Details](ChannelKickMember.md)                             | [ChannelKickMember](../../../../app/assets/proto/ChannelKickMember.proto)               	            |
+| <a name="action_30407">30407</a> 	| [Details](ChannelKickMemberResponse.md)                     | [ChannelKickMemberResponse](../../../../app/assets/proto/ChannelKickMember.proto)               	    |
+| <a name="action_408">408</a> 	    | [Details](ChannelKickModerator.md)                          | [ChannelKickModerator](../../../../app/assets/proto/ChannelKickModerator.proto)               	        |
+| <a name="action_30408">30408</a> 	| [Details](ChannelKickModeratorResponse.md)                  | [ChannelKickModeratorResponse](../../../../app/assets/proto/ChannelKickModerator.proto)                 |
+| <a name="action_409">409</a> 	    | [Details](ChannelLeft.md)                                   | [ChannelLeft](../../../../app/assets/proto/ChannelLeft.proto)               	                        |
+| <a name="action_30409">30409</a> 	| [Details](ChannelLeftResponse.md)                           | [ChannelLeftResponse](../../../../app/assets/proto/ChannelLeft.proto)               	                |
+| <a name="action_410">410</a> 	    | [Details](ChannelSendMessage.md)                            | [ChannelSendMessage](../../../../app/assets/proto/ChannelSendMessage.proto)               	            |
+| <a name="action_30410">30410</a> 	| [Details](ChannelSendMessageResponse.md)                    | [ChannelSendMessageResponse](../../../../app/assets/proto/ChannelSendMessage.proto)               	    |
+| <a name="action_411">411</a> 	    | [Details](ChannelDeleteMessage.md)                          | [ChannelDeleteMessage](../../../../app/assets/proto/ChannelDeleteMessage.proto)               	        |
+| <a name="action_30411">30411</a> 	| [Details](ChannelDeleteMessageResponse.md)                  | [ChannelDeleteMessageResponse](../../../../app/assets/proto/ChannelDeleteMessage.proto)                 |
+| <a name="action_412">412  </a> 	| [Details](ChannelAvatarAdd.md)                              | [ChannelAvatarAdd](../../../../app/assets/proto/ChannelAvatarAdd.proto)               	                |
+| <a name="action_30412">30412</a> 	| [Details](ChannelAvatarAddResponse.md)                      | [ChannelAvatarAddResponse](../../../../app/assets/proto/ChannelAvatarAdd.proto)                         |
+| <a name="action_413">413</a> 	    | [Details](ChannelAvatarDelete.md)                           | [ChannelAvatarDelete](../../../../app/assets/proto/ChannelAvatarDelete.proto)               	        |
+| <a name="action_30413">30413</a> 	| [Details](ChannelAvatarDeleteResponse.md)                   | [ChannelAvatarDeleteResponse](../../../../app/assets/proto/ChannelAvatarDelete.proto)                   |
+| <a name="action_414">414</a> 	    | [Details](ChannelAvatarGetList.md)                          | [ChannelAvatarGetList](../../../../app/assets/proto/ChannelAvatarGetList.proto)               	        |
+| <a name="action_30414">30414</a> 	| [Details](ChannelAvatarGetListResponse.md)                  | [ChannelAvatarGetListResponse](../../../../app/assets/proto/ChannelAvatarGetList.proto)                 |
+| <a name="action_415">415</a> 	    | [Details](ChannelUpdateDraft.md)                            | [ChannelUpdateDraft](../../../../app/assets/proto/ChannelUpdateDraft.proto)               	            |
+| <a name="action_30415">30415</a> 	| [Details](ChannelUpdateDraftResponse.md)                    | [ChannelUpdateDraftResponse](../../../../app/assets/proto/ChannelUpdateDraft.proto)                     |
+| <a name="action_416">416</a> 	    | [Details](ChannelGetDraft.md)                               | [ChannelGetDraft](../../../../app/assets/proto/ChannelGetDraft.proto)               	                |
+| <a name="action_30416">30416</a> 	| [Details](ChannelGetDraftResponse.md)                       | [ChannelGetDraftResponse](../../../../app/assets/proto/ChannelGetDraft.proto)                           |
+| <a name="action_417">417</a> 	    | [Details](ChannelGetMemberList.md)                          | [ChannelGetMemberList](../../../../app/assets/proto/ChannelGetMemberList.proto)               	        |
+| <a name="action_30417">30417</a> 	| [Details](ChannelGetMemberListResponse.md)                  | [ChannelGetMemberListResponse](../../../../app/assets/proto/ChannelGetMemberList.proto)                 |
+| <a name="action_418">418</a> 	    | [Details](ChannelCheckUsername.md)                          | [ChannelCheckUsername](../../../../app/assets/proto/ChannelCheckUsername.proto)               	        |
+| <a name="action_30418">30418</a> 	| [Details](ChannelCheckUsernameResponse.md)                  | [ChannelCheckUsernameResponse](../../../../app/assets/proto/ChannelCheckUsername.proto)                 |
+| <a name="action_419">419</a> 	    | [Details](ChannelUpdateUsername.md)                         | [ChannelUpdateUsername](../../../../app/assets/proto/ChannelUpdateUsername.proto)               	    |
+| <a name="action_30419">30419</a> 	| [Details](ChannelUpdateUsernameResponse.md)                 | [ChannelUpdateUsernameResponse](../../../../app/assets/proto/ChannelUpdateUsername.proto)               |
+| <a name="action_420">420</a> 	    | [Details](ChannelRemoveUsername.md)                         | [ChannelRemoveUsername](../../../../app/assets/proto/ChannelRemoveUsername.proto)               	    |
+| <a name="action_30420">30420</a> 	| [Details](ChannelRemoveUsernameResponse.md)                 | [ChannelRemoveUsernameResponse](../../../../app/assets/proto/ChannelRemoveUsername.proto)               |
+| <a name="action_421">421</a> 	    | [Details](ChannelRevokeLink.md)                             | [ChannelRevokeLink](../../../../app/assets/proto/ChannelRevokeLink.proto)               	            |
+| <a name="action_30421">30421</a> 	| [Details](ChannelRevokeLinkResponse.md)                     | [ChannelRevokeLinkResponse](../../../../app/assets/proto/ChannelRevokeLink.proto)                       |
+| <a name="action_422">422</a> 	    | [Details](ChannelUpdateSignature.md)                        | [ChannelUpdateSignature](../../../../app/assets/proto/ChannelUpdateSignature.proto)               	    |
+| <a name="action_30422">30422</a> 	| [Details](ChannelUpdateSignatureResponse.md)                | [ChannelUpdateSignatureResponse](../../../../app/assets/proto/ChannelUpdateSignature.proto)             |
+| <a name="action_423">423</a> 	    | [Details](ChannelGetMessagesStats.md)                       | [ChannelGetMessagesStats](../../../../app/assets/proto/ChannelGetMessagesStats.proto)                   |
+| <a name="action_30423">30423</a> 	| [Details](ChannelGetMessagesStatsResponse.md)               | [ChannelGetMessagesStatsResponse](../../../../app/assets/proto/ChannelGetMessagesStats.proto)           |
+| <a name="action_424">424</a> 	    | [Details](ChannelAddMessageReaction.md)                     | [ChannelAddMessageReaction](../../../../app/assets/proto/ChannelAddMessageReaction.proto)               |
+| <a name="action_30424">30424</a> 	| [Details](ChannelAddMessageReactionResponse.md)             | [ChannelAddMessageReactionResponse](../../../../app/assets/proto/ChannelAddMessageReaction.proto)       |
+| <a name="action_425">425</a> 	    | [Details](ChannelEditMessage.md)                            | [ChannelEditMessage](../../../../app/assets/proto/ChannelEditMessage.proto)               	            |
+| <a name="action_30425">30425</a> 	| [Details](ChannelEditMessageResponse.md)                    | [ChannelEditMessageResponse](../../../../app/assets/proto/ChannelEditMessage.proto)                     |
+| <a name="action_426">426</a> 	    | [Details](ChannelUpdateReactionStatus.md)                   | [ChannelUpdateReactionStatus](../../../../app/assets/proto/ChannelUpdateReactionStatus.proto)           |
+| <a name="action_30426">30426</a> 	| [Details](ChannelUpdateReactionStatusResponse.md)           | [ChannelUpdateReactionStatusResponse](../../../../app/assets/proto/ChannelUpdateReactionStatus.proto)   |
+| <a name="action_427">427</a> 	    | [Details](ChannelPinMessage.md)                             | [ChannelPinMessage](../../../../app/assets/proto/ChannelPinMessage.proto)                               |
+| <a name="action_30427">30427</a> 	| [Details](ChannelPinMessageResponse.md)                     | [ChannelPinMessageResponse](../../../../app/assets/proto/ChannelPinMessage.proto)                       |
 
 # Info 5xx , 305xx
 
@@ -311,6 +317,8 @@
 | <a name="action_30615">30615</a> 	| [Details](ClientPinRoomResponse.md)             | [ClientPinRoomResponse](../../../../app/assets/proto/ClientPinRoom.proto)                                   |
 | <a name="action_616">616</a> 	    | [Details](ClientRoomReport.md)                  | [ClientRoomReport](../../../../app/assets/proto/ClientRoomReport.proto)               	                    |
 | <a name="action_30616">30616</a> 	| [Details](ClientRoomReportResponse.md)          | [ClientRoomReportResponse](../../../../app/assets/proto/ClientRoomReport.proto)                             |
+| <a name="action_617">617</a> 	    | [Details](ClientRegisterDevice.md)              | [ClientRegisterDevice](../../../../app/assets/proto/ClientRegisterDevice.proto)               	            |
+| <a name="action_30617">30617</a> 	| [Details](ClientRegisterDeviceResponse.md)      | [ClientRegisterDeviceResponse](../../../../app/assets/proto/ClientRegisterDevice.proto)                     |
 
 # File 7xx , 307xx
 
@@ -390,6 +398,39 @@
 | <a name="action_1007">1007</a> 	| [Details](GeoGetConfiguration.md)                 | [GeoGetConfiguration](../../../../app/assets/proto/GeoGetConfiguration.proto)                         |
 | <a name="action_31007">31007</a> 	| [Details](GeoGetConfigurationResponse.md)         | [GeoGetConfigurationResponse](../../../../app/assets/proto/GeoGetConfiguration.proto)                 |
 
+# Wallet 90xx
+
+| Id 	                            |Details                                            | Proto file                	                                                                        |
+|----	                            |-----------------------------------                |-------------------------------------------------------------------                                    |
+| <a name="action_9000">9000</a> 	| [Details](WalletGetAccessToken.md)                | [WalletGetAccessToken](../../../../app/assets/proto/WalletGetAccessToken.proto)               	    |
+| <a name="action_39000">39000</a> 	| [Details](WalletGetAccessTokenResponse.md)        | [WalletGetAccessTokenResponse](../../../../app/assets/proto/WalletGetAccessToken.proto)               |
+| <a name="action_9001">9001</a> 	| [Details](WalletWalletPaymentInit.md)             | [WalletWalletPaymentInit](../../../../app/assets/proto/WalletWalletPaymentInit.proto)                 |
+| <a name="action_39001">39001</a> 	| [Details](WalletWalletPaymentInitResponse.md)     | [WalletWalletPaymentInitResponse](../../../../app/assets/proto/WalletWalletPaymentInit.proto)         |
+| <a name="action_9002">9002</a> 	| [Details](WalletRegister.md)                      | [WalletRegister](../../../../app/assets/proto/WalletRegister.proto)               	                |
+| <a name="action_39002">39002</a> 	| [Details](WalletRegisterResponse.md)              | [WalletRegisterResponse](../../../../app/assets/proto/WalletRegister.proto)                           |
+| <a name="action_9003">9003</a> 	| [Details](WalletIdMapping.md)                     | [WalletIdMapping](../../../../app/assets/proto/WalletIdMapping.proto)               	                |
+| <a name="action_39003">39003</a> 	| [Details](WalletIdMappingResponse.md)             | [WalletIdMappingResponse](../../../../app/assets/proto/WalletIdMapping.proto)                         |
+
+# Mpl 91xx
+
+| Id 	                            |Details                                            | Proto file                	                                                                        |
+|----	                            |-----------------------------------                |-------------------------------------------------------------------                                    |
+| <a name="action_9100">9100</a> 	| [Details](MplGetBillToken.md)                     | [MplGetBillToken](../../../../app/assets/proto/MplGetBillToken.proto)               	                |
+| <a name="action_39100">39100</a> 	| [Details](MplGetBillTokenResponse.md)             | [MplGetBillTokenResponse](../../../../app/assets/proto/MplGetBillToken.proto)                         |
+| <a name="action_9101">9101</a> 	| [Details](MplGetTopupToken.md)                    | [MplGetTopupToken](../../../../app/assets/proto/MplGetTopupToken.proto)               	            |
+| <a name="action_39101">39101</a> 	| [Details](MplGetTopupTokenResponse.md)            | [MplGetTopupTokenResponse](../../../../app/assets/proto/MplGetTopupToken.proto)                       |
+
+
+
+# BillInquiry 92xx
+
+| Id 	                            |Details                                            | Proto file                	                                                                        |
+|----	                            |-----------------------------------                |-------------------------------------------------------------------                                    |
+| <a name="action_9200">9200</a> 	| [Details](BillInquiryMci.md)                      | [BillInquiryMci](../../../../app/assets/proto/BillInquiryMci.proto)               	                |
+| <a name="action_39200">39200</a> 	| [Details](BillInquiryMciResponse.md)              | [BillInquiryMciResponse](../../../../app/assets/proto/BillInquiryMci.proto)                           |
+| <a name="action_9201">9201</a> 	| [Details](BillInquiryTelecom.md)                  | [BillInquiryTelecom](../../../../app/assets/proto/BillInquiryTelecom.proto)               	        |
+| <a name="action_39201">39201</a> 	| [Details](BillInquiryTelecomResponse.md)          | [BillInquiryTelecomResponse](../../../../app/assets/proto/BillInquiryTelecom.proto)                   |
+
 # Push 600xx
 
 | Id 	                            |Details                                            | Proto file                	                                                                        |
@@ -398,3 +439,4 @@
 | <a name="action_60001">60001</a> 	| [Details](PushTwoStepVerificationResponse.md)     | [PushTwoStepVerificationResponse](../../../../app/assets/proto/PushTwoStepVerification.proto)         |
 | <a name="action_60002">60002</a> 	| [Details](PushUserInfoExpiredResponse.md)         | [PushUserInfoExpiredResponse](../../../../app/assets/proto/PushUserInfoExpired.proto)               	|
 | <a name="action_60003">60003</a> 	| [Details](PushRateSignalingResponse.md)           | [PushRateSignalingResponse](../../../../app/assets/proto/PushRateSignaling.proto)               	    |
+| <a name="action_60004">60004</a> 	| [Details](PushWalletPaymentVerifiedResponse.md)   | [PushWalletPaymentVerifiedResponse](../../../../app/assets/proto/PushWalletPaymentVerified.proto)     |

@@ -8,3 +8,7 @@
 ---
 
 * [RateSignaling](RateSignaling.md)
+
+---
+
+* [WalletPaymentVerified](WalletPaymentVerified.md)

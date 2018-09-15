@@ -1,0 +1,23 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+import "Global.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoWalletPaymentInit";
+
+message WalletPaymentInit {
+    Request request = 1;
+    Language language = 2;
+    string jwt = 3;
+    uint64 to_user_id = 4;
+    uint64 amount = 5;
+    string description = 6;
+}
+
+message WalletPaymentInitResponse {
+    Response response = 1;
+    string token = 2;
+    string public_key = 3;
+}

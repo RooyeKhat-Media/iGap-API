@@ -35,6 +35,7 @@
 * 109 - [USER_LOGIN_BAD_PAYLOAD](README.md#error-109-user_login_bad_payload)
 * 110 - [USER_LOGIN_INTERNAL_SERVER_ERROR](README.md#error-110-user_login_internal_server_error)
 * 111 - [USER_LOGIN_FAILED](README.md#error-111-user_login_failed)
+* 10170 - [USER_LOGIN_ALREADY_LOGGED_IN](README.md#error-10170-user_login_already_logged_in)
 
 ---
 
@@ -55,6 +56,7 @@
 
 * 118 - [USER_CONTACTS_IMPORT_BAD_PAYLOAD](README.md#error-118-user_contacts_import_bad_payload)
 * 119 - [USER_CONTACTS_IMPORT_INTERNAL_SERVER_ERROR](README.md#error-119-user_contacts_import_internal_server_error)
+* 10169 - [USER_CONTACTS_IMPORT_FORBIDDEN](README.md#error-10169-user_contacts_import_forbidden)
 
 ---
 
@@ -124,6 +126,8 @@
 * 156 - [USER_DELETE_INVALID_TOKEN](README.md#error-156-user_delete_invalid_token)
 * 157 - [USER_DELETE_EXPIRED_TOKEN](README.md#error-157-user_delete_expired_token)
 * 158 - [USER_DELETE_MAX_TRY_LOCK](README.md#error-158-user_delete_max_try_lock)
+* 10171 - [USER_DELETE_WALLET_RESTRICTION](README.md#error-10171-user_delete_wallet_restriction)
+* 10172 - [USER_DELETE_WALLET_BAD_GATEWAY](README.md#error-10172-user_delete_wallet_bad_gateway)
 
 ---
 
@@ -551,6 +555,12 @@
 * 377 - [GROUP_EDIT_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-377-group_edit_message_internal_server_error)
 * 378 - [GROUP_EDIT_MESSAGE_FORBIDDEN](README.md#error-378-group_edit_message_forbidden)
 
+---
+
+* 381 - [GROUP_PIN_MESSAGE_BAD_PAYLOAD](README.md#error-381-group_pin_message_bad_payload)
+* 382 - [GROUP_PIN_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-382-group_pin_message_internal_server_error)
+* 383 - [GROUP_PIN_MESSAGE_FORBIDDEN](README.md#error-383-group_pin_message_forbidden)
+
 # Channel room errors 4xx
 
 * 400 - [CHANNEL_CREATE_BAD_PAYLOAD](README.md#error-400-channel_create_bad_payload)
@@ -709,6 +719,18 @@
 * 476 - [CHANNEL_EDIT_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-476-channel_edit_message_internal_server_error)
 * 477 - [CHANNEL_EDIT_MESSAGE_FORBIDDEN](README.md#error-477-channel_edit_message_forbidden)
 
+---
+
+* 480 - [CHANNEL_UPDATE_REACTION_STATUS_BAD_PAYLOAD](README.md#error-480-channel_update_reaction_status_bad_payload)
+* 481 - [CHANNEL_UPDATE_REACTION_STATUS_INTERNAL_SERVER_ERROR](README.md#error-481-channel_update_reaction_status_internal_server_error)
+* 482 - [CHANNEL_UPDATE_REACTION_STATUS_FORBIDDEN](README.md#error-482-channel_update_reaction_status_forbidden)
+
+---
+
+* 483 - [CHANNEL_PIN_MESSAGE_BAD_PAYLOAD](README.md#error-483-channel_pin_message_bad_payload)
+* 484 - [CHANNEL_PIN_MESSAGE_INTERNAL_SERVER_ERROR](README.md#error-484-channel_pin_message_internal_server_error)
+* 485 - [CHANNEL_PIN_MESSAGE_FORBIDDEN](README.md#error-485-channel_pin_message_forbidden)
+
 # Info errors 5xx
 
 * 500 - [INFO_LOCATION_NOT_FOUND](README.md#error-500-info_location_not_found)
@@ -846,6 +868,12 @@
 * 657 - [CLIENT_ROOM_REPORT_INTERNAL_SERVER_ERROR](README.md#error-657-client_room_report_internal_server_error)
 * 658 - [CLIENT_ROOM_REPORT_REPORTED_BEFORE](README.md#error-658-client_room_report_reported_before)
 * 659 - [CLIENT_ROOM_REPORT_FORBIDDEN](README.md#error-659-client_room_report_forbidden)
+
+---
+
+* 660 - [CLIENT_REGISTER_DEVICE_BAD_PAYLOAD](README.md#error-660-client_register_device_bad_payload)
+* 661 - [CLIENT_REGISTER_DEVICE_INTERNAL_SERVER_ERROR](README.md#error-661-client_register_device_internal_server_error)
+* 662 - [CLIENT_REGISTER_DEVICE_FORBIDDEN](README.md#error-662-client_register_device_forbidden)
 
 # File errors 7xx
 
@@ -1009,3 +1037,60 @@
 
 * 1019 - [GEO_GET_CONFIGURATION_BAD_PAYLOAD](README.md#error-1019-geo_get_configuration_bad_payload)
 * 1020 - [GEO_GET_CONFIGURATION_INTERNAL_SERVER_ERROR](README.md#error-1020-geo_get_configuration_internal_server_error)
+
+# Wallet 90xx
+
+* 9000 - [WALLET_GET_ACCESS_TOKEN_BAD_PAYLOAD](README.md#error-9000-wallet_get_access_token_bad_payload)
+* 9001 - [WALLET_GET_ACCESS_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9001-wallet_get_access_token_internal_server_error)
+* 9002 - [WALLET_GET_ACCESS_TOKEN_BAD_GATEWAY](README.md#error-9002-wallet_get_access_token_bad_gateway)
+* 9003 - [WALLET_GET_ACCESS_TOKEN_FORBIDDEN](README.md#error-9003-wallet_get_access_token_forbidden)
+
+---
+
+* 9004 - [WALLET_PAYMENT_INIT_BAD_PAYLOAD](README.md#error-9004-wallet_payment_init_bad_payload)
+* 9005 - [WALLET_PAYMENT_INIT_INTERNAL_SERVER_ERROR](README.md#error-9005-wallet_payment_init_internal_server_error)
+* 9006 - [WALLET_PAYMENT_INIT_BAD_GATEWAY](README.md#error-9006-wallet_payment_init_bad_gateway)
+* 9007 - [WALLET_PAYMENT_INIT_FORBIDDEN](README.md#error-9007-wallet_payment_init_forbidden)
+* 9008 - [WALLET_PAYMENT_INIT_RECIPIENT_FORBIDDEN](README.md#error-9008-wallet_payment_init_recipient_forbidden)
+* 9009 - [WALLET_PAYMENT_INIT_GATEWAY_ERROR](README.md#error-9009-wallet_payment_init_gateway_error)
+* 9010 - [WALLET_PAYMENT_INIT_RECIPIENT_NOT_REGISTERED](README.md#error-9010-wallet_payment_init_recipient_not_registered)
+
+---
+
+* 9011 - [WALLET_REGISTER_BAD_PAYLOAD](README.md#error-9011-wallet_register_bad_payload)
+* 9012 - [WALLET_REGISTER_INTERNAL_SERVER_ERROR](README.md#error-9012-wallet_register_internal_server_error)
+* 9013 - [WALLET_REGISTER_FORBIDDEN](README.md#error-9013-wallet_register_forbidden)
+
+---
+
+* 9014 - [WALLET_ID_MAPPING_BAD_PAYLOAD](README.md#error-9014-wallet_id_mapping_bad_payload)
+* 9015 - [WALLET_ID_MAPPING_INTERNAL_SERVER_ERROR](README.md#error-9015-wallet_id_mapping_internal_server_error)
+* 9016 - [WALLET_ID_MAPPING_NOT_FOUND](README.md#error-9016-wallet_id_mapping_not_found)
+
+# Mpl 91xx
+
+* 9100 - [MPL_GET_BILL_TOKEN_BAD_PAYLOAD](README.md#error-9100-mpl_get_bill_token_bad_payload)
+* 9101 - [MPL_GET_BILL_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9101-mpl_get_bill_token_internal_server_error)
+* 9102 - [MPL_GET_BILL_TOKEN_BAD_GATEWAY](README.md#error-9102-mpl_get_bill_token_bad_gateway)
+* 9103 - [MPL_GET_BILL_TOKEN_FORBIDDEN](README.md#error-9103-mpl_get_bill_token_forbidden)
+
+---
+
+* 9104 - [MPL_GET_TOPUP_TOKEN_BAD_PAYLOAD](README.md#error-9104-mpl_get_topup_token_bad_payload)
+* 9105 - [MPL_GET_TOPUP_TOKEN_INTERNAL_SERVER_ERROR](README.md#error-9105-mpl_get_topup_token_internal_server_error)
+* 9106 - [MPL_GET_TOPUP_TOKEN_BAD_GATEWAY](README.md#error-9106-mpl_get_topup_token_bad_gateway)
+* 9107 - [MPL_GET_TOPUP_TOKEN_FORBIDDEN](README.md#error-9107-mpl_get_topup_token_forbidden)
+
+# BillInquiry 92xx
+
+* 9200 - [BILL_INQUIRY_MCI_BAD_PAYLOAD](README.md#error-9200-bill_inquiry_mci_bad_payload)
+* 9201 - [BILL_INQUIRY_MCI_INTERNAL_SERVER_ERROR](README.md#error-9201-bill_inquiry_mci_internal_server_error)
+* 9202 - [BILL_INQUIRY_MCI_BAD_GATEWAY](README.md#error-9202-bill_inquiry_mci_bad_gateway)
+* 9203 - [BILL_INQUIRY_MCI_FORBIDDEN](README.md#error-9203-bill_inquiry_mci_forbidden)
+
+---
+
+* 9204 - [BILL_INQUIRY_TELECOM_BAD_PAYLOAD](README.md#error-9204-bill_inquiry_telecom_bad_payload)
+* 9205 - [BILL_INQUIRY_TELECOM_INTERNAL_SERVER_ERROR](README.md#error-9205-bill_inquiry_telecom_internal_server_error)
+* 9206 - [BILL_INQUIRY_TELECOM_BAD_GATEWAY](README.md#error-9206-bill_inquiry_telecom_bad_gateway)
+* 9207 - [BILL_INQUIRY_TELECOM_FORBIDDEN](README.md#error-9207-bill_inquiry_telecom_forbidden)

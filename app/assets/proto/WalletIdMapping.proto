@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoWalletIdMapping";
+
+message WalletIdMapping {
+    Request request = 1;
+    string wallet_id = 2;
+}
+
+message WalletIdMappingResponse {
+    Response response = 1;
+    uint64 user_id = 2;
+}

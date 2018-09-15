@@ -93,10 +93,11 @@ You have exceeded the number of requests allowed
 ### Error 100 - USER_REGISTER_BAD_PAYLOAD
 Bad payload for request [#100](../proto/README.md#action_100)
 
-| Minor Code 	| Detail                  	| Reaction 	|
-|------------	|-------------------------	|----------	|
-| 1          	| Country code is invalid 	| *        	|
-| 2          	| Username is invalid     	| *        	|
+| Minor Code 	| Detail                  	        | Reaction 	|
+|------------	|-------------------------	        |----------	|
+| 1          	| Country code is invalid 	        | *        	|
+| 2          	| Username is invalid     	        | *        	|
+| 3          	| PreferenceMethod is invalid     	| *        	|
 
 ### Error 101 - USER_REGISTER_INTERNAL_SERVER_ERROR
 Internal server error for request [#100](../proto/README.md#action_100)
@@ -221,6 +222,13 @@ Login failed
 | *          	| *                       	| Go to registration page        	|
 | 4          	| Your account is blocked 	| *        	                        |
 
+### Error 10170 - USER_LOGIN_ALREADY_LOGGED_IN
+You are forbidden to login again for request [#102](../proto/README.md#action_102)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
 
 ### Error 112 - USER_PROFILE_SET_NICKNAME_BAD_PAYLOAD
 Bad payload for request [#105](../proto/README.md#action_105)
@@ -276,9 +284,17 @@ Bad payload for request [#106](../proto/README.md#action_106)
 | 2          	| First Name is not valid   	| *        	|
 | 3          	| Last Name is not valid    	| *        	|
 | 4          	| Force is not valid        	| *        	|
+| 5          	| Too many contacts         	| *        	|
 
 ### Error 119 - USER_CONTACTS_IMPORT_INTERNAL_SERVER_ERROR
 Internal server error for request [#106](../proto/README.md#action_106)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 10169 - USER_CONTACTS_IMPORT_FORBIDDEN
+You are forbidden to do the action for request [#106](../proto/README.md#action_106)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|
@@ -516,6 +532,20 @@ Account destruction token you entered has expired for request [#119](../proto/RE
 
 ### :triangular_flag_on_post: :one: Error 158 - USER_DELETE_MAX_TRY_LOCK
 Destruction Code for deleting user account has been entered incorrectly too many times for request [#119](../proto/README.md#action_119)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 10171 - USER_DELETE_WALLET_RESTRICTION
+You are forbidden to do the action due to wallet restriction for request [#119](../proto/README.md#action_119)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 10172 - USER_DELETE_WALLET_BAD_GATEWAY
+Server was not able to get a valid or any response from the Wallet server for request [#119](../proto/README.md#action_119)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|
@@ -1376,6 +1406,7 @@ Bad payload for request [#201](../proto/README.md#action_201)
 | 30         	| Message is invalid                    	| *        	|
 | 31         	| Attachment is invalid                 	| *        	|
 | 32         	| **Message is too long**               	| *        	|
+| 33         	| Random id is invalid                    	| *        	|
 
 ### Error 204 - CHAT_SEND_MESSAGE_INTERNAL_SERVER_ERROR
 Internal server error for request [#201](../proto/README.md#action_201)
@@ -1748,6 +1779,7 @@ Bad payload for request [#310](../proto/README.md#action_310)
 | 30         	| Message is invalid                    	| *        	|
 | 31         	| Attachment is invalid                 	| *        	|
 | 32         	| **Message is too long**               	| *        	|
+| 33         	| Random id is invalid                    	| *        	|
 
 
 ### Error 307 - GROUP_SEND_MESSAGE_INTERNAL_SERVER_ERROR
@@ -2330,6 +2362,31 @@ You are forbidden to do the action for request [#325](../proto/README.md#action_
 | *          	| *      	| *        	|
 
 
+### Error 381 - GROUP_PIN_MESSAGE_BAD_PAYLOAD
+Bad payload for request [#326](../proto/README.md#action_326)
+
+| Minor Code 	| Detail                	| Reaction 	|
+|------------	|-----------------------	|----------	|
+| 1          	| Room_ID is invalid    	| *        	|
+| 2          	| Message_ID is invalid 	| *        	|
+
+
+### Error 382 - GROUP_PIN_MESSAGE_INTERNAL_SERVER_ERROR
+Internal server error for request [#326](../proto/README.md#action_326)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 383 - GROUP_PIN_MESSAGE_FORBIDDEN
+You are forbidden to do the action for request [#326](../proto/README.md#action_326)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
 # Channel Errors(4xx)
 
 ### Error 400 - CHANNEL_CREATE_BAD_PAYLOAD
@@ -2433,6 +2490,7 @@ Bad payload for request [#410](../proto/README.md#action_410)
 | 30         	| Message is invalid                    	| *        	|
 | 31         	| Attachment is invalid                 	| *        	|
 | 32         	| **Message is too long**               	| *        	|
+| 33         	| Random id is invalid                    	| *        	|
 
 
 ### Error 407 - CHANNEL_SEND_MESSAGE_INTERNAL_SERVER_ERROR
@@ -3029,6 +3087,56 @@ You are forbidden to do the action for request [#425](../proto/README.md#action_
 | *          	| *      	| *        	|
 
 
+### Error 480 - CHANNEL_UPDATE_REACTION_STATUS_BAD_PAYLOAD
+Bad payload for request [#426](../proto/README.md#action_426)
+
+| Minor Code 	| Detail               	        | Reaction 	|
+|------------	|----------------------	        |----------	|
+| 1          	| Room_ID is invalid   	        | *        	|
+| 2          	| reaction_status is invalid 	| *        	|
+
+
+### Error 481 - CHANNEL_UPDATE_REACTION_STATUS_INTERNAL_SERVER_ERROR
+Internal server error for request [#426](../proto/README.md#action_426)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 482 - CHANNEL_UPDATE_REACTION_STATUS_FORBIDDEN
+You are forbidden to do the action for request [#426](../proto/README.md#action_426)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 483 - CHANNEL_PIN_MESSAGE_BAD_PAYLOAD
+Bad payload for request [#427](../proto/README.md#action_427)
+
+| Minor Code 	| Detail                	| Reaction 	|
+|------------	|-----------------------	|----------	|
+| 1          	| Room_ID is invalid    	| *        	|
+| 2          	| Message_ID is invalid 	| *        	|
+
+
+### Error 484 - CHANNEL_PIN_MESSAGE_INTERNAL_SERVER_ERROR
+Internal server error for request [#427](../proto/README.md#action_427)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 485 - CHANNEL_PIN_MESSAGE_FORBIDDEN
+You are forbidden to do the action for request [#427](../proto/README.md#action_427)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
 # Info Errors(5xx)
 ### Error 500 - INFO_LOCATION_NOT_FOUND
 Location could not be found for the request [#500](../proto/README.md#action_500)
@@ -3542,6 +3650,30 @@ You have already reported this message/room for the request [#616](../proto/READ
 
 ### Error 659 - CLIENT_ROOM_REPORT_FORBIDDEN
 You are forbidden to do the action for request [#616](../proto/README.md#action_616)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 660 - CLIENT_REGISTER_DEVICE_BAD_PAYLOAD
+Bad payload for request [#617](../proto/README.md#action_617)
+
+| Minor Code 	| Detail             	| Reaction 	|
+|------------	|--------------------	|----------	|
+| 1          	| token is invalid 	    | *        	|
+| 2          	| type is invalid 	    | *        	|
+
+
+### Error 661 - CLIENT_REGISTER_DEVICE_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#617](../proto/README.md#action_617)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 662 - CLIENT_REGISTER_DEVICE_FORBIDDEN
+Internal server error for request [#617](../proto/README.md#action_617)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|
@@ -4192,6 +4324,276 @@ Bad payload for request [#1007](../proto/README.md#action_1007)
 
 ### Error 1020 - GEO_GET_CONFIGURATION_INTERNAL_SERVER_ERROR
 Internal server error for request [#1007](../proto/README.md#action_1007)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+# Wallet errors 90xx
+
+### Error 9000 - WALLET_GET_ACCESS_TOKEN_BAD_PAYLOAD
+Bad payload for request [#9000](../proto/README.md#action_9000)
+
+| Minor Code 	| Detail         	| Reaction 	|
+|------------	|----------------	|----------	|
+| *          	| *      	        | *        	|
+
+
+### Error 9001 - WALLET_GET_ACCESS_TOKEN_INTERNAL_SERVER_ERROR
+Internal server error for request [#9000](../proto/README.md#action_9000)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9002 - WALLET_GET_ACCESS_TOKEN_BAD_GATEWAY
+Server was not able to get a valid or any response from the Wallet server for request [#9000](../proto/README.md#action_9000)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9003 - WALLET_GET_ACCESS_TOKEN_FORBIDDEN
+You are forbidden to do the action for request [#9000](../proto/README.md#action_9000)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 9004 - WALLET_PAYMENT_INIT_BAD_PAYLOAD
+Bad payload for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail         	        | Reaction 	|
+|------------	|----------------	        |----------	|
+| 1          	| language is invalid      	| *        	|
+| 2          	| jwt is invalid      	    | *        	|
+| 3          	| to_user_id is invalid     | *        	|
+| 4          	| amount is invalid      	| *        	|
+| 5          	| description is invalid    | *        	|
+
+
+### Error 9005 - WALLET_PAYMENT_INIT_INTERNAL_SERVER_ERROR
+Internal server error for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9006 - WALLET_PAYMENT_INIT_BAD_GATEWAY
+Server was not able to get a valid or any response from the Wallet server for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9007 - WALLET_PAYMENT_INIT_FORBIDDEN
+You are forbidden to do the action for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9008 - WALLET_PAYMENT_INIT_RECIPIENT_FORBIDDEN
+Recipient are forbidden for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9009 - WALLET_PAYMENT_INIT_GATEWAY_ERROR
+Error from Wallet server for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9010 - WALLET_PAYMENT_INIT_RECIPIENT_NOT_REGISTERED
+Recipient is not registered in wallet for request [#9001](../proto/README.md#action_9001)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 9011 - WALLET_REGISTER_BAD_PAYLOAD
+Bad payload for request [#9002](../proto/README.md#action_9002)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9012 - WALLET_REGISTER_INTERNAL_SERVER_ERROR
+Internal server error for request [#9002](../proto/README.md#action_9002)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9013 - WALLET_REGISTER_FORBIDDEN
+You are forbidden to do the action for request [#9002](../proto/README.md#action_9002)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 9014 - WALLET_ID_MAPPING_BAD_PAYLOAD
+Bad payload for request [#9003](../proto/README.md#action_9003)
+
+| Minor Code 	| Detail 	                    | Reaction 	|
+|------------	|--------	                    |----------	|
+| 1          	| wallet_id is invalid      	| *        	|
+
+
+### Error 9015 - WALLET_ID_MAPPING_INTERNAL_SERVER_ERROR
+Internal server error for request [#9003](../proto/README.md#action_9003)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9016 - WALLET_ID_MAPPING_NOT_FOUND
+No such user was found for request [#9003](../proto/README.md#action_9003)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+# Mpl errors 90xx
+
+### Error 9100 - MPL_GET_BILL_TOKEN_BAD_PAYLOAD
+Bad payload for request [#9100](../proto/README.md#action_9100)
+
+| Minor Code 	| Detail         	        | Reaction 	|
+|------------	|----------------	        |----------	|
+| 1          	| bill_id is invalid        | *        	|
+| 2          	| pay_id is invalid         | *        	|
+
+
+### Error 9101 - MPL_GET_BILL_TOKEN_INTERNAL_SERVER_ERROR
+Internal server error for request [#9100](../proto/README.md#action_9100)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9102 - MPL_GET_BILL_TOKEN_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9100](../proto/README.md#action_9100)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9103 - MPL_GET_BILL_TOKEN_FORBIDDEN
+You are forbidden to do the action for request [#9100](../proto/README.md#action_9100)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 9104 - MPL_GET_TOPUP_TOKEN_BAD_PAYLOAD
+Bad payload for request [#9101](../proto/README.md#action_9101)
+
+| Minor Code 	| Detail         	                    | Reaction 	|
+|------------	|----------------	                    |----------	|
+| 1          	| charge_mobile_number is invalid       | *        	|
+| 2          	| amount is invalid                     | *        	|
+| 2          	| type is invalid                       | *        	|
+
+
+### Error 9105 - MPL_GET_TOPUP_TOKEN_INTERNAL_SERVER_ERROR
+Internal server error for request [#9101](../proto/README.md#action_9101)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9106 - MPL_GET_TOPUP_TOKEN_BAD_GATEWAY
+Server was not able to get a valid or any response from the Mpl server for request [#9101](../proto/README.md#action_9101)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9107 - MPL_GET_TOPUP_TOKEN_FORBIDDEN
+You are forbidden to do the action for request [#9101](../proto/README.md#action_9101)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+# BillInquiry errors 92xx
+
+### Error 9200 - BILL_INQUIRY_MCI_BAD_PAYLOAD
+Bad payload for request [#9200](../proto/README.md#action_9200)
+
+| Minor Code 	| Detail         	              | Reaction 	|
+|------------	|----------------	              |----------	|
+| 1          	| mobile_number is invalid        | *        	|
+
+
+### Error 9201 - BILL_INQUIRY_MCI_INTERNAL_SERVER_ERROR
+Internal server error for request [#9200](../proto/README.md#action_9200)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9202 - BILL_INQUIRY_MCI_BAD_GATEWAY
+Server was not able to get a valid or any response from the bill inquiry server for request [#9200](../proto/README.md#action_9200)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9203 - BILL_INQUIRY_MCI_FORBIDDEN
+You are forbidden to do the action for request [#9200](../proto/README.md#action_9200)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 9204 - BILL_INQUIRY_TELECOM_BAD_PAYLOAD
+Bad payload for request [#9201](../proto/README.md#action_9201)
+
+| Minor Code 	| Detail         	                    | Reaction 	|
+|------------	|----------------	                    |----------	|
+| 1          	| province_code is invalid              | *        	|
+| 2          	| telephone_number is invalid           | *        	|
+
+
+### Error 9205 - BILL_INQUIRY_TELECOM_INTERNAL_SERVER_ERROR
+Internal server error for request [#9201](../proto/README.md#action_9201)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9206 - BILL_INQUIRY_TELECOM_BAD_GATEWAY
+Server was not able to get a valid or any response from the bill inquiry server for request [#9201](../proto/README.md#action_9201)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
+### Error 9207 - BILL_INQUIRY_TELECOM_FORBIDDEN
+You are forbidden to do the action for request [#9201](../proto/README.md#action_9201)
 
 | Minor Code 	| Detail 	| Reaction 	|
 |------------	|--------	|----------	|
