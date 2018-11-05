@@ -1344,6 +1344,22 @@ You are forbidden to do the action for request [#149](../proto/README.md#action_
 | *          	| *      	| *        	|
 
 
+### Error 10173 - USER_SET_BOT_BAD_PAYLOAD
+Bad payload for request [#150](../proto/README.md#action_150)
+
+| Minor Code 	| Detail                 	| Reaction 	|
+|------------	|------------------------	|----------	|
+| 1          	| status is invalid     	| *        	|
+
+
+### Error 10174 - USER_SET_BOT_INTERNAL_SERVER_ERROR
+Internal server error for request [#150](../proto/README.md#action_150)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+
 # Chat Errors(2xx)
 ### Error 200 - CHAT_GET_ROOM_BAD_PAYLOAD
 Bad payload for request [#200](../proto/README.md#action_200)

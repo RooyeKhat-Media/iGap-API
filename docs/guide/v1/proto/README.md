@@ -116,6 +116,8 @@
 | <a name="action_30148">30148</a> 	| [Details](UserProfileGetBioResponse.md)                                           | [UserProfileGetBioResponse](../../../../app/assets/proto/UserProfileGetBio.proto)                                                                 | 
 | <a name="action_149">149</a> 	    | [Details](UserReport.md)                                                          | [UserReport](../../../../app/assets/proto/UserReport.proto)                                                                                       | 
 | <a name="action_30149">30149</a> 	| [Details](UserReportResponse.md)                                                  | [UserReportResponse](../../../../app/assets/proto/UserReport.proto)                                                                               | 
+| <a name="action_150">150</a> 	    | [Details](UserSetBot.md)                                                          | [UserSetBot](../../../../app/assets/proto/UserSetBot.proto)                                                                                       | 
+| <a name="action_30150">30150</a> 	| [Details](UserSetBotResponse.md)                                                  | [UserSetBotResponse](../../../../app/assets/proto/UserSetBot.proto)                                                                               | 
 
 # Chat 2xx , 302xx
 

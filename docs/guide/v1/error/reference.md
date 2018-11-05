@@ -328,6 +328,11 @@
 * 10167 - [USER_REPORT_REPORTED_BEFORE](README.md#error-10167-user_report_reported_before)
 * 10168 - [USER_REPORT_FORBIDDEN](README.md#error-10168-user_report_forbidden)
 
+---
+
+* 10173 - [USER_SET_BOT_BAD_PAYLOAD](README.md#error-10173-user_set_bot_bad_payload)
+* 10174 - [USER_SET_BOT_INTERNAL_SERVER_ERROR](README.md#error-10174-user_set_bot_internal_server_error)
+
 # Chat room errors 2xx
 
 * 200 - [CHAT_GET_ROOM_BAD_PAYLOAD](README.md#error-200-chat_get_room_bad_payload)

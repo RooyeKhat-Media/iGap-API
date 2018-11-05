@@ -25,6 +25,7 @@
     * :o: [SetBio](user/profile/SetBio.md)
     * [GetBio](user/profile/GetBio.md)
 * [Report](user/Report.md)
+* :o: [SetBot](user/SetBot.md)
 * Contacts
     * [Import](user/contacts/Import.md)
     * :o: [GetList](user/contacts/GetList.md)

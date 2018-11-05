@@ -161,6 +161,7 @@ message RegisteredUser {
     string cache_id = 15;
     string bio = 16;
     bool verified = 17;
+    bool bot = 18;
 }
 
 enum ClientAction {

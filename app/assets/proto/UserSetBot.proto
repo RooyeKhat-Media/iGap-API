@@ -1,0 +1,17 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoUserSetBot";
+
+message UserSetBot {
+    Request request = 1;
+    bool status = 2;
+}
+
+message UserSetBotResponse {
+    Response response = 1;
+    bool status = 2;
+}
