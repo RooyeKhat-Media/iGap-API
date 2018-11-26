@@ -1,0 +1,27 @@
+syntax = "proto3";
+package proto;
+import "Request.proto";
+import "Response.proto";
+
+option java_package = "net.iGap.proto";
+option java_outer_classname = "ProtoClientGetPromote";
+
+message ClientGetPromote {
+    Request request = 1;
+}
+
+message ClientGetPromoteResponse {
+    Response response = 1;
+
+    message Promote {
+        enum Type {
+            USER = 0;
+            PUBLIC_ROOM = 1;
+        }
+        Type type = 1;
+
+        uint64 id = 2;
+    }
+
+    repeated Promote promote = 2;
+}

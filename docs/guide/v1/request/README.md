@@ -161,6 +161,7 @@
 * :o: [PinRoom](client/PinRoom.md)
 * [RoomReport](client/RoomReport.md)
 * [RegisterDevice](client/RegisterDevice.md)
+* [GetPromote](client/GetPromote.md)
 
 # File
 * [Upload](file/Upload.md)

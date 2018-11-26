@@ -273,6 +273,7 @@ message Room {
     RoomMute room_mute = 15;
     uint64 pin_id = 16;
     RoomMessage pinned_message = 17;
+    uint32 priority = 18;
 
     ChatRoom chat_room_extra = 11;
     GroupRoom group_room_extra = 12;

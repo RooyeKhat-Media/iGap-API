@@ -3695,6 +3695,19 @@ Internal server error for request [#617](../proto/README.md#action_617)
 |------------	|--------	|----------	|
 | *          	| *      	| *        	|
 
+### Error 663 - CLIENT_GET_PROMOTE_BAD_PAYLOAD
+Bad payload for request [#618](../proto/README.md#action_618)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
+
+### Error 664 - CLIENT_GET_PROMOTE_INTERNAL_SERVER_ERROR
+You are forbidden to do the action for request [#618](../proto/README.md#action_618)
+
+| Minor Code 	| Detail 	| Reaction 	|
+|------------	|--------	|----------	|
+| *          	| *      	| *        	|
 
 # File Errors(7xx)
 

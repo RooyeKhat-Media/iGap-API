@@ -321,6 +321,8 @@
 | <a name="action_30616">30616</a> 	| [Details](ClientRoomReportResponse.md)          | [ClientRoomReportResponse](../../../../app/assets/proto/ClientRoomReport.proto)                             |
 | <a name="action_617">617</a> 	    | [Details](ClientRegisterDevice.md)              | [ClientRegisterDevice](../../../../app/assets/proto/ClientRegisterDevice.proto)               	            |
 | <a name="action_30617">30617</a> 	| [Details](ClientRegisterDeviceResponse.md)      | [ClientRegisterDeviceResponse](../../../../app/assets/proto/ClientRegisterDevice.proto)                     |
+| <a name="action_618">618</a> 	    | [Details](ClientGetPromote.md)                  | [ClientGetPromote](../../../../app/assets/proto/ClientGetPromote.proto)               	                    |
+| <a name="action_30618">30618</a> 	| [Details](ClientGetPromoteResponse.md)          | [ClientGetPromoteResponse](../../../../app/assets/proto/ClientGetPromote.proto)                             |
 
 # File 7xx , 307xx
 
