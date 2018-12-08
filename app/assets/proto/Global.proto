@@ -227,6 +227,9 @@ message RoomMessage {
     uint64 previous_message_id = 18;
     uint64 random_id = 21;
 
+    uint32 additional_type = 23;
+    string additional_data = 24;
+
     enum ExtraType {
         NO_EXTRA = 0;
         CHANNEL_EXTRA = 1;
